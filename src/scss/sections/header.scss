@@ -126,6 +126,33 @@
 
 .header-dropdown {
 
+    position: relative;
+    &:hover {
+        &::after {
+            content: '';
+            position: absolute;
+            top: 100%;
+            left: 0;right: 0;
+            height: 10px;
+        }
+        .header-dropdown__list {
+            padding: 12px;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+
+            background: rgba(9, 129, 123, 0.5);
+            backdrop-filter: blur(12.5px);
+            -webkit-backdrop-filter: blur(12.5px);
+            border-radius: 8px;
+
+            font-size: 16px;
+            font-weight: 500;
+            color: $colorWhite;
+
+        }
+    }
+
     // .header-dropdown__value
     &__value {
         color: $colorWhite;
@@ -151,6 +178,11 @@
     // .header-dropdown__list
     &__list {
         display: none;
+
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        translate: -50% 10px;
     }
 }
 

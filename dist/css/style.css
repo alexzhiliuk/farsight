@@ -737,6 +737,30 @@ button {
   display: none;
 }
 
+.header-dropdown {
+  position: relative;
+}
+.header-dropdown:hover::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  height: 10px;
+}
+.header-dropdown:hover .header-dropdown__list {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  background: rgba(9, 129, 123, 0.5);
+  backdrop-filter: blur(12.5px);
+  -webkit-backdrop-filter: blur(12.5px);
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #FFFFFF;
+}
 .header-dropdown__value {
   color: #FFFFFF;
   font-size: 15px;
@@ -758,6 +782,10 @@ button {
 }
 .header-dropdown__list {
   display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  translate: -50% 10px;
 }
 
 .mobile-menu {

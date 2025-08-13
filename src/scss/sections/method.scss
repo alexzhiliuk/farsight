@@ -1,0 +1,61 @@
+.methods {
+    @include flexColumns(3, 12px);
+    @media screen and (max-width: $breakpoint992) {
+        @include flexColumns(2, 12px);
+    }
+    @media screen and (max-width: $breakpoint768) {
+        @include flexColumns(1, 12px);
+    }
+    counter-reset: methods-counter;
+}
+
+.method-item {
+
+    border-radius: 12px;
+    border: 1px solid #CBD5E1;
+    background: $colorWhite;
+    padding: 20px;
+    min-height: 258px;
+
+    @media screen and (max-width: $breakpoint768) {
+        min-height: unset;
+    }
+
+    position: relative;
+    counter-increment: methods-counter;
+    &::before {
+        content: counter(methods-counter, decimal-leading-zero);
+        position: absolute;
+        top: 27px;
+        right: 20px;
+
+        color:#132F3B;
+        text-align: center;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 100%; /* 16px */
+    }
+
+    // .method-item__title
+    &__title {
+        padding-right: 30px;
+        color: #3E484E;
+        font-size: clamp(18px, 2vw, 20px);
+        font-style: normal;
+        font-weight: 600;
+        line-height: 120%; /* 24px */
+        letter-spacing: 0.3px;
+        word-break: break-word;
+    }
+
+    // .method-item__text
+    &__text {
+        margin-top: 20px;
+        color: #4A5961;
+        font-size: clamp(16px, 2vw, 18px);
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%; /* 25.2px */
+    }
+}

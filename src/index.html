@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include('html/head.html',{
+        "title": "Главная"
+    })
+    <body>
+        
+        @@include('html/index/popup.html')
+        @@include('html/header.html',{
+            "class": "header_filled"
+        })
+        <main>            
+            @@include('html/index/hero.html')
+            @@include('html/index/reasons.html')
+            @@include('html/index/metrics.html')
+            @@include('html/index/method.html')
+            @@include('html/index/cases.html')
+            @@include('html/index/services.html')
+            @@include('html/index/track.html')
+            @@include('html/index/reputation.html')
+            @@include('html/index/steps.html')
+            @@include('html/index/form.html')
+            @@include('html/index/faq.html')
+            @@include('html/index/insight.html')
+        </main>
+        @@include('html/footer.html')
+
+        <script src="js/app.min.js"></script>
+    </body>
+</html>

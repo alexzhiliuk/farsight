@@ -1,0 +1,169 @@
+.reputation-section {
+    .section {
+        &__header {
+            display: flex;
+            justify-content: space-between;
+            gap: 16px;
+
+            @media screen and (max-width: $breakpoint992) {
+                flex-direction: column;
+                gap: 24px;
+            }
+        }
+        &__title {
+            flex: 0 1 392px;
+
+            @media screen and (max-width: $breakpoint992) {
+                flex: unset;
+            }
+        }
+    }
+
+    .brands {
+        flex: 0 1 933px;
+        @include flexColumns(3, 6px);
+
+        @media screen and (max-width: $breakpoint992) {
+            flex: unset;
+            @include flexColumns(2, 16px);
+        }
+
+        &__item {
+            padding: 10px;
+            height: clamp(90px, 20vw, 230px);
+            border-radius: 16px;
+            border: 1px solid #AFAFAF;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img {
+                max-height: 80%;
+                max-width: 80%;
+                object-fit: contain;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+
+.reputation-swiper {
+
+    width: 100vw !important;
+    margin-left: calc(-1 * (100vw - 100%) / 2) !important;
+    margin-right: calc(-1 * (100vw - 100%) / 2) !important;
+
+    padding-left: calc((100vw - 100%) / 2) !important;
+    padding-right: calc((100vw - 100%) / 2) !important;
+
+    // .reputation-swiper__footer
+    &__footer {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        z-index: 2;
+        top: -16px;
+        translate: 0 -100%;
+    }
+
+    .swiper-slide {
+        width: fit-content;
+        height: auto;
+    }
+
+    .swiper-counter {
+        @media screen and (min-width: $breakpoint768) {
+            display: none;
+        }
+
+        color: $colorWhite;
+        ._current {
+            color: $colorWhite;
+        }
+        ._total {
+            color: #959595;
+        }
+    }
+
+    
+}
+
+.reputation-slide {
+
+    border-radius: 12px;
+    background: $colorPrimary;
+    padding: clamp(16px, 2vw, 20px);
+
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    width: 612px;
+    height: 100%;
+
+    @media screen and (max-width: $breakpoint768) {
+        flex-direction: column;
+        padding-bottom: 60px;
+        width: calc(100vw - (2 * $containerPadding));
+    }
+
+    // .reputation-slide__video
+    &__video {
+        width: 232px;
+        aspect-ratio: 1;
+        flex-shrink: 0;
+
+        @media screen and (max-width: $breakpoint768) {
+            width: 100%;
+            height: 210px;
+            aspect-ratio: unset;    
+        }
+
+        border-radius: 6px;
+        overflow: hidden;
+
+        position: relative;
+        // &::after {
+        //     content: '';
+        //     position: absolute;
+        //     top: 50%;
+        //     left: 50%;
+        //     translate: -50% -50%;
+        //     width: 22.5%;
+        //     aspect-ratio: 1;
+        //     background: url(../img/reputation/play.png) center / contain no-repeat;
+        // }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    // .reputation-slide__body
+    &__body {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    // .reputation-slide__title
+    &__title {
+        color: $colorWhite;
+        font-size: clamp(20px, 2vw, 22px);
+        font-style: normal;
+        font-weight: 400;
+        line-height: 120%;
+    }
+
+    // .reputation-slide__text
+    &__text {
+        color: #CBD5E1;
+        font-size: clamp(16px, 2vw, 18px);
+        font-style: normal;
+        font-weight: 400;
+        line-height: 120%; /* 21.6px */
+    }
+
+}

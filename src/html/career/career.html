@@ -1,0 +1,113 @@
+<div class="section section-back">
+    <div class="container">
+        <a href="index.html" class="back">Главная</a>
+    </div>
+</div>
+
+<div class="career-section">
+    <div class="career-section__container container">
+        <div class="career-section__header">
+            <h1 class="career-section__title title">Карьера</h1>
+        </div>
+        <div class="career-section__body">
+
+            <div class="free-text">
+                <h2>Sales manager</h2>
+                <strong>Чем предстоит заниматься:</strong>
+                <ul>
+                    <li>Совершать звонки тем клиентам, которые вам интересны, назначать и проводить личные встречи;</li>
+                    <li>Работать со входящими звонками, заявками с сайта;</li>
+                    <li>Вести деловую переписку с клиентами, готовить маркетинговые стратегии, отправлять коммерческие предложения;</li>
+                    <li>Использовать удобную CRM для систематизации своей работы;</li>
+                    <li>Работать с профессионалами своего дела и всегда быть в курсе всех digital-новостей мира</li>
+                </ul>
+                <strong>Мы ждем от вас:</strong>
+                <ul>
+                    <li>Отличных навыков успешной презентации и ведения деловых переговоров;</li>
+                    <li>Позитива, энергичности, проактивности;</li>
+                    <li>Клиентоориентированного подхода к работе;</li>
+                    <li>Умения работать в команде;</li>
+                    <li>Желания развиваться и постоянно повышать свой профессиональный уровень;</li>
+                    <li>Знание основ интернет-маркетинга;</li>
+                    <li>Опыт в активных продажах В2В от 1 года</li>
+                </ul>
+                <strong>Что предлагаем мы:</strong>
+                <ul>
+                    <li>Трехдневную интенсивную стажировку, включающую в себя полноценный курс обучения;</li>
+                    <li>Менторство по продажам и продуктам на протяжении всего испытательного срока;</li>
+                    <li>Оклад (по результатам собеседования);</li>
+                    <li>Один из самых высоких % от продаж по рынку;</li>
+                    <li>Получение % от платежей клиента, приведенного в компанию, в течение 6 месяцев;</li>
+                    <li>Дополнительные бонусы за достижение KPI;</li>
+                    <li>Официальное трудоустройство, прозрачная система оплаты труда;</li>
+                    <li>График работы: 5/2 с 9:00 до 18:00.</li>
+                </ul>
+            </div>
+
+            <form action="" class="career-form">
+                <h2 class="career-form__title">Сопроводительное письмо</h2>
+                <div class="career-form__fields">
+                    <textarea name="" id=""></textarea>
+                </div>
+
+                <div class="career-form__footer">
+                    <div class="file-picker">
+                        <img src="@img/career/icon.svg" alt="">
+                        <input type="file" id="file-input" accept=".pdf,.docx,.txt">
+                        Прикрепить резюме
+                    </div>
+                    <div class="file">
+                        <img src="@img/career/file.svg" alt="" class="file__icon">
+                        <p class="file__name"></p>
+                        <img src="@img/career/check.svg" alt="" class="file__check">
+                        <span class="file__remove"  id="removeFile">Удалить </span>
+                    </div>
+                    <button type="submit" class="btn">Отправить сообщение</button>
+                </div>
+            </form>
+                    
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function() {
+        $(document).on("click", ".file__remove", function() {
+            $('#file-input').val('');
+            $('#file-input').replaceWith($('#file-input').clone());
+            $(".file-picker").show()
+            $(".file").hide()
+        })
+        
+        // Обработчик выбора файла
+        $(document).on("change", '#file-input', function(e) {
+            if (this.files && this.files.length > 0) {
+                const file = this.files[0];
+                const fileName = file.name;
+                const fileExtension = fileName.split('.').pop().toLowerCase();
+                
+                // Устанавливаем соответствующую иконку для файла
+                let fileIcon = 'fa-file-alt'; // иконка по умолчанию
+                
+                if (fileExtension === 'pdf') {
+                    fileIcon = 'fa-file-pdf';
+                } else if (fileExtension === 'docx') {
+                    fileIcon = 'fa-file-word';
+                } else if (fileExtension === 'txt') {
+                    fileIcon = 'fa-file-text';
+                }
+                
+                // Обновляем превью файла
+                $('.file__name').text(fileName);
+                $('.file').css("display", "flex");
+                $(".file-picker").hide()
+            }
+        });
+        
+        // Обработчик удаления файла
+        $('.remove-file').click(function() {
+            $('#file-input').val(''); // очищаем input
+            $('.file-preview').fadeOut();
+        });
+    });
+</script>

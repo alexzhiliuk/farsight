@@ -1,0 +1,197 @@
+.services-section {
+
+    .section__header {
+        display: flex;
+        align-items: flex-start;
+        gap: 50px;
+        row-gap: 16px;
+
+        @media screen and (min-width: $breakpoint992) {
+            & > * {
+                &:nth-child(1) {
+                    flex-grow: 1;
+                }  
+                &:nth-child(2) {
+                    flex: 0 1 420px;
+                }
+                &:nth-child(3) {
+                    flex: 0 1 467px;
+                }
+            }
+        }
+
+        @media screen and (max-width: $breakpoint992) {
+            flex-direction: column;
+        }
+    }
+
+    // .services-section__img
+    &__img {
+        border-radius: 8px;
+        overflow: hidden;
+        @media screen and (max-width: $breakpoint992) {
+            width: 100%;
+            height: clamp(270px, 60vw, 400px);
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__footer-image {
+        margin-top: 40px;
+        aspect-ratio: 16 / 6;
+        min-height: 170px;
+        position: relative;
+        @include width100vw;
+        &::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(0deg, rgba(19, 47, 59, 0.00) 0%, #132F3B 100%);
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+    }
+}
+
+.services {
+    @include flexColumns(3, 10px);
+
+    @media screen and (max-width: $breakpoint992) {
+        @include flexColumns(2, 10px);
+        row-gap: 32px;
+
+        .section-quote {
+            order: 3;
+            flex: 0 0 100%;
+        }
+    }
+
+    @media screen and (max-width: $breakpoint768) {
+        @include flexColumns(1, 32px);
+    }
+}
+
+
+.service {
+    padding: 20px;
+    border-radius: 12px;
+    border: 3px solid #09817B;
+    
+    &_gray {
+        border: 1px solid #485E76;
+    }
+
+    // .service__header
+    &__header {
+    }
+
+    // .service__title
+    &__title {
+        color: $colorWhite;
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 140%; /* 36.4px */
+    }
+
+    // .service__subtitle
+    &__subtitle {
+        margin-top: 15px;
+        color: #CBD5E1;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 120%; /* 21.6px */
+    }
+
+    // .service__btn
+    &__btn {
+        margin-top: 20px;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    // .service__body
+    &__body {
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+
+        padding-right: 15px;
+        position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            width: 4px;
+            background: linear-gradient(180deg, #E3F0FF 0%, #283F58 100%);
+        }
+    }
+
+    // .service__item
+    &__item {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    // .service__list-title
+    &__list-title {
+        color: $colorWhite;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 140%; /* 30.8px */
+    }
+
+    // .service__list
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        color: #CBD5E1;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 120%; /* 21.6px */
+
+        li {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            &::before {
+                content: '';
+                flex-shrink: 0;
+                width: 20px;
+                height: 20px;
+                display: block;
+                background: url(../../img/services/icon-color.svg) center / contain no-repeat;
+            }
+
+            &._gray {
+                &::before {
+                    background: url(../../img/services/icon-gray.svg) center / contain no-repeat;
+                }
+            }
+            &._disabled {
+                &::before {
+                    background: url(../../img/services/icon-disabled.svg) center / contain no-repeat;
+                }
+            }
+        }
+    }
+}
+

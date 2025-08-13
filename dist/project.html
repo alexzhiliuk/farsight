@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicons -->
+     
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&display=swap&_v=20250813182014" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.min.css?_v=20250813182014">
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css?_v=20250813182014"
+    />
+
+    <!-- JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js?_v=20250813182014"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js?_v=20250813182014"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.2.0/jquery.magnific-popup.min.js?_v=20250813182014"></script>
+
+    <title>Проект для инвестиций</title>
+</head>
+    <body>
+
+        <section class="popup" data-popup="1" style="display: none;">
+    <form class="popup__inner">
+        <div class="popup__close">
+            <img src="img/popup/close.svg" alt="">
+        </div>
+        <h2 class="popup__title">Чтобы узнать больше, про инвистиционный объект</h2>
+        <p class="popup__subtitle">пожалуйста, заполните форму контактных данных.</p>
+        <div class="popup__inputs">
+            <input class="popup__input input" type="text" placeholder="Ваше имя" required>
+            <input class="popup__input input" type="tel" data-tel-input placeholder="+7(__)___-__-__" required>
+            <input class="popup__input input" type="email" placeholder="E-mail" required>
+            <label class="popup__confirm">
+                <input type="checkbox" class="checkbox">
+                <p>Я даю согласие на обработку моих персональных данных.</p>
+            </label>
+        </div>
+        <button type="submit" class="btn popup__btn">Отправить</button>
+    </form>
+</section>
+        <header class="header header_black">
+    <div class="header__container container">
+        <a href="index.html" class="header__logo">
+            <img src="img/base/logo.png" alt="" class="_white">
+            <img src="img/base/logo-black.png" alt="" class="_black">
+        </a>
+        <nav class="header__nav">
+            <ul class="header__menu">
+                <li>
+                    <a href="about.html">О компании</a>
+                </li>
+                <li>
+                    <a href="index.html">Управление</a>
+                </li>
+                <li>
+                    <a href="projects.html">Инвестиции</a>
+                </li>
+                <li>
+                    <a href="partner.html">Партнерам</a>
+                </li>
+                <li>
+                    <a href="blog.html">Блог</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="header__lang header-dropdown">
+            <div class="header-dropdown__value">RU</div>
+            <ul class="header-dropdown__list">
+                <li><a href="">EN</a></li>
+                <li><a href="">RU</a></li>
+            </ul>
+        </div>
+        <div class="header__socials">
+            <a href=""><img src="img/socials/WhatsApp.svg" alt=""></a>
+        </div>
+        <div class="header__burger">
+            <img src="img/burger/open.svg" alt="" class="_white">
+            <img src="img/burger/open-black.svg" alt="" class="_black">
+        </div>
+    </div>
+</header>
+
+<div class="mobile-menu">
+    <div class="container mobile-menu__container">
+        <div class="mobile-menu__header">
+            <a href="index.html" class="mobile-menu__logo">
+                <img src="img/base/logo.png" alt="">
+            </a>
+            <div class="mobile-menu__close">
+                <img src="img/burger/close.svg" alt="">
+            </div>
+        </div>
+        <ul class="mobile-menu__list">
+        </ul>
+        <a href="" class="mobile-menu__btn">Забронировать виллу</a>
+        <div class="mobile-menu__socials">
+            <a href=""><img src="img/socials/inst.png" alt=""></a>
+            <a href=""><img src="img/socials/fb.png" alt=""></a>
+            <a href=""><img src="img/socials/yt.png" alt=""></a>
+            <a href=""><img src="img/socials/in.png" alt=""></a>
+        </div>
+    </div>
+</div>
+        <main>            
+            <div class="section section-back">
+    <div class="container">
+        <a href="index.html" class="back">Главная</a>
+    </div>
+</div>
+
+<section class="section project-section">
+    <div class="section__container container">
+        <div class="section__header">
+            <h1 class="section__title">B25 – СМАРТ-ВИЛЛЫ 95,2 m <sup>2</sup></h1>
+            <p class="project-section__loc">Индонезия, Бали, Джимбаран</p>
+        </div>
+        <div class="section__body">
+            <div class="project-info">
+                <div class="project-info__data">
+                    <h3 class="project-info__title">Показатели рентабельности виллы за последний год:</h3>
+                    <div class="project-info__table">
+                        <div class="project-info__tr">
+                            <div class="project-info__value">$400</div>
+                            <div class="project-info__label">Цена за ночь</div>
+                        </div>
+                        <div class="project-info__tr">
+                            <div class="project-info__value">81%</div>
+                            <div class="project-info__label">Заполняемость</div>
+                        </div>
+                        <div class="project-info__tr">
+                            <div class="project-info__value">$185 000</div>
+                            <div class="project-info__label">Доход владельца в год</div>
+                        </div>
+                        <div class="project-info__tr">
+                            <div class="project-info__value">24%</div>
+                            <div class="project-info__label">Прибыль от аренды</div>
+                        </div>
+                        <div class="project-info__tr">
+                            <div class="project-info__value">4.8 <span class="_star">★</span></div>
+                            <div class="project-info__label">Оценка (отзывы)</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info__gallery">
+                    <a href="img/project/img1.png"><img src="img/project/img1.png" alt=""></a>
+                    <a href="img/project/img2.png"><img src="img/project/img2.png" alt=""></a>
+                    <a href="img/project/img3.png"><img src="img/project/img3.png" alt=""></a>
+                    <a href="img/project/img3.png">
+                        <div class="_hover">
+                            <img src="img/project/hover.svg" alt="">
+                            Все фотографии
+                        </div>
+                        <img src="img/project/img1.png" alt="">
+                    </a>
+                    <a href="img/project/img3.png"><img src="img/project/img3.png" alt=""></a>
+                    <a href="img/project/img3.png"><img src="img/project/img3.png" alt=""></a>
+                    <a href="img/project/img3.png"><img src="img/project/img3.png" alt=""></a>
+                    <a href="img/project/img3.png"><img src="img/project/img3.png" alt=""></a>
+                </div>
+            </div>
+            <div class="project-footer">
+                <div class="project-footer__price">
+                    Cтоимость: <span>$245,000</span>
+                </div>
+                <a href="javascript:void(0)" class="project-footer__btn btn js-open-popup" data-popup="1">Подробнее</a>
+            </div>
+        </div>
+        <div class="section__body">
+            <div class="project-about">
+                <a href="https://www.youtube.com/embed/kU48CSz74Js?si=7bZGHBoAg_CST_UJ" class="project-about__video">
+                    <iframe src="https://www.youtube.com/embed/kU48CSz74Js?si=7bZGHBoAg_CST_UJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </a>
+                <div class="project-about__info">
+                    <h2 class="project-about__title">B25 – СМАРТ-ВИЛЛЫ 95,2 m2</h2>
+                    <div class="project-about__data">
+                        <div class="project-about__tr">
+                            <div class="project-about__label">
+                                <div class="project-about__label-icon">
+                                    <img src="img/projects/loc.svg" alt="">
+                                </div>
+                                Расположение:
+                            </div>
+                            <div class="project-about__value">
+                                Пляжная полоса Баланган (Джимбаран)
+                            </div>
+                        </div>
+                        <div class="project-about__tr">
+                            <div class="project-about__label">
+                                <div class="project-about__label-icon">
+                                    <img src="img/project/land.svg" alt="">
+                                </div>
+                                Земля:
+                            </div>
+                            <div class="project-about__value">
+                                <div class="project-about__label-icon">
+                                    Свободная собственность
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-about__tr">
+                            <div class="project-about__label">
+                                <div class="project-about__label-icon">
+                                    <img src="img/project/area.svg" alt="">
+                                </div>
+                                Площадь участка:
+                            </div>
+                            <div class="project-about__value">
+                                9,15 м2
+                            </div>
+                        </div>
+                        <div class="project-about__tr">
+                            <div class="project-about__label">
+                                <div class="project-about__label-icon">
+                                    <img src="img/project/area2.svg" alt="">
+                                </div>
+                                Жилая площадь:
+                            </div>
+                            <div class="project-about__value">
+                                300 м2
+                            </div>
+                        </div>
+                        <div class="project-about__tr">
+                            <div class="project-about__label">
+                                <div class="project-about__label-icon">
+                                    <img src="img/project/year.svg" alt="">
+                                </div>
+                                Год постройки:
+                            </div>
+                            <div class="project-about__value">
+                                2014
+                            </div>
+                        </div>
+                        <div class="project-about__tr">
+                            <div class="project-about__label">
+                                <div class="project-about__label-icon">
+                                    <img src="img/project/certificate.svg" alt="">
+                                </div>
+                                Сертификат:
+                            </div>
+                            <div class="project-about__value">
+                                IMB
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-about__text">
+                        <p>Эта роскошная вилла с бассейном на Бали олицетворяет идеальное сочетание роскоши и спокойствия, предлагая незабываемый отдых, окутанный комфортом, простотой и изысканностью. Вилла Bali Vacation 888 может похвастаться просторной и стильной гостиной с письменным столом, обеденной зоной, телевизором и высокоскоростным Wi-Fi, искусно украшенной современной мебелью, напоминающей старинное дерево. Здесь гости могут расслабиться на мягких диванах и насладиться сиестой, создав идеальную обстановку для памятных моментов с семьей и друзьями за стаканом холодного свежего смузи. Арендуемый дом отдыха у бассейна на Бали для семей и друзей имеет открытую планировку, которая плавно переходит в полностью оборудованную кухню, что делает ее кулинарным раем для гурманов. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    $(document).ready(function() {
+        $('.project-info__gallery a').magnificPopup({
+            type:'image',
+            gallery:{
+                enabled:true
+            }
+        });
+    });
+</script>
+            <section class="section">
+    <div class="section__container container">
+        <div class="section__body">
+            <form action="" class="cta-form project-cta-form">
+                <div class="cta-form__left">
+                    <h2 class="cta-form__title">Хотите узнать больше?</h2>
+                    <p class="cta-form__subtitle">Свяжитесь с нами и мы с радостью ответим на все ваши вопросы!</p>
+                </div>
+                <div class="cta-form__right">
+                    <div class="cta-form__fields">
+                        <input type="text" class="input" placeholder="Ваше имя">
+                        <input type="tel" class="input" data-tel-input placeholder="+7(__)___-__-__">
+                        <input type="email" class="input" placeholder="Ваш e-mail">
+                        <button type="submit" class="cta-form__submit btn btn_white btn_outline">
+                            Получить консультацию
+                        </button>
+                    </div>
+                    <label class="cta-form__confirm">
+                        <input type="checkbox" class="checkbox checkbox_white">
+                        <p>
+                            Я даю согласие на обработку моих персональных данных
+                        </p>
+                    </label>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+        </main>
+        <footer class="footer">
+    <div class="footer__container container">
+        <div class="footer__top">
+            <div class="footer-swiper swiper" id="footerSwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <p>FARSIGHT MANAGEMENT</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p>FARSIGHT MANAGEMENT</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p>FARSIGHT MANAGEMENT</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p>FARSIGHT MANAGEMENT</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p>FARSIGHT MANAGEMENT</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p>FARSIGHT MANAGEMENT</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__body">
+            <div class="footer__col">
+                <a href="index.html" class="footer__logo">
+                    <img src="img/base/logo.png" alt="">
+                </a>
+                <div class="footer__socials">
+                    <a href=""><img src="img/socials/inst.png" alt=""></a>
+                    <a href=""><img src="img/socials/fb.png" alt=""></a>
+                    <a href=""><img src="img/socials/yt.png" alt=""></a>
+                    <a href=""><img src="img/socials/in.png" alt=""></a>
+                </div>
+                <nav class="footer__nav">
+                    <ul class="footer__menu">
+                        <li><a href="">О Компании</a></li>
+                        <li><a href="">Вопросы и ответы</a></li>
+                        <li><a href="">Проекты для инвестиций</a></li>
+                        <li><a href="">Для партнеров</a></li>
+                        <li><a href="">Вакансии</a></li>
+                    </ul>
+                </nav>
+                <a href="" class="footer__btn btn btn_white btn_outline">Забронировать виллу</a>
+            </div>
+            <div class="footer__col">
+                <div class="footer__office">
+                    <div class="footer__title">Офис:</div>
+                    <p class="footer__text">Улица Райя Улувату Печату, район Печату, округ Кута Селатан, округ Бадунг, Бали 80361, Индонезия</p>
+                </div>
+                <div class="footer__connect">
+                    <div class="footer__title">Мы на связи</div>
+                    <div class="footer__massengers">
+                        <a href="" class="footer__massenger">
+                            <img src="img/footer/tg.svg" alt="">
+                            Telegram
+                        </a>
+                        <a href="" class="footer__massenger">
+                            <img src="img/footer/wts.svg" alt="">
+                            WhatsApp
+                        </a>
+                        <a href="" class="footer__massenger">
+                            <img src="img/footer/email.svg" alt="">
+                            E-mail
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__socials">
+                    <a href=""><img src="img/socials/inst.png" alt=""></a>
+                    <a href=""><img src="img/socials/fb.png" alt=""></a>
+                    <a href=""><img src="img/socials/yt.png" alt=""></a>
+                    <a href=""><img src="img/socials/in.png" alt=""></a>
+                </div>
+            </div>
+            <div class="footer__col">
+                <div>
+                    <div class="footer__title">Узнать больше об управлении недвижимостью</div>
+                    <p class="footer__text">Оставьте e-mail — пришлём материалы и будем делиться новыми кейсами</p>
+                    <div class="footer__form">
+                        <div class="footer__field">
+                            <input type="email" placeholder="E-mail">
+                            <button type="submit"><img src="img/footer/submit.svg" alt=""></button>
+                        </div>
+                        <label class="footer__confirm">
+                            <input type="checkbox" class="checkbox checkbox_gray">
+                            <p>Подписываясь, вы принимаете <a href="">Политику конфиденциальности</a> и условия публичной оферты</p>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <small class="footer__copy">© PT Farsight Villas & Hotels Management Company, 2025</small>
+            <ul class="footer__politics">
+                <li><a href="">Privacy Policy</a></li>
+                <li><a href="">Cookie Policy</a></li>
+            </ul>
+        </div>
+
+    </div>
+</footer>
+
+        <script src="js/app.min.js?_v=20250813182014"></script>
+    </body>
+</html>

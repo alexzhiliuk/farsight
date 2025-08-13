@@ -1,0 +1,36 @@
+// Container
+$conteinerWidth: 1400 + px;
+$containerPadding: 16 + px;
+
+// Breakpoints
+$breakpoint1440: 1439.98 + px;
+$breakpoint1400: 1399.98 + px;
+$breakpoint1200: 1199.98 + px;
+$breakpoint1024: 1023.98 + px;
+$breakpoint992: 991.98 + px;
+$breakpoint768: 767.98 + px;
+$breakpoint576: 575.98 + px;
+$breakpoint480: 479.98 + px;
+
+// Colors
+$colorWhite: #FFFFFF;
+$colorBlack: #000000;
+$colorPrimary: #132F3B;
+$colorLightGreen: #4FD298;
+$colorYellow: #FFAE00;
+$gradientPrimary: linear-gradient(180deg, rgba(19, 47, 59, 0.00) 0%, rgba(19, 47, 59, 0.55) 42.31%, #132F3B 86.06%);
+
+// Fonts
+$fontPrimary: "Inter";
+$fontTitle: "Oswald";
+
+// Layers
+$headerLayer: 9;
+$mobileMenuLayer: 10;
+$popupLayer: 11;
+
+// Burger
+$burgerBreakpoint: $breakpoint992;
+
+// Transitions
+$quickTransition: all 120ms ease-out;

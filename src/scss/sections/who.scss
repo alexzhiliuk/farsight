@@ -1,0 +1,103 @@
+.who-section {
+    .section__header {
+        display: flex;
+        align-items: flex-start;
+        gap: 40px;
+
+        @media screen and (max-width: $breakpoint992) {
+            flex-direction: column;
+        }
+    }
+    .section__title {
+        flex: 0 0 323px;
+
+        @media screen and (max-width: $breakpoint992) {
+            flex: unset;
+        }
+    }
+}
+
+.who {
+
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    // .who__item
+    &__item {
+        display: flex;
+        flex-direction: column;
+        padding: clamp(16px, 3vw, 32px);
+        border-radius: 12px;
+        border: 1px solid rgba(255, 255, 255, 0.12);
+    }
+
+    // .who__title
+    &__title {
+        color: $colorWhite;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 1.4;
+        text-transform: uppercase;
+    }
+
+    // .who__text
+    &__text {
+        margin-top: 20px;
+        color: $colorWhite;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 1.5; /* 150% */
+
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+
+        strong, b {
+            font-weight: 600;
+        }
+
+        ul {
+            li {
+                display: flex;
+
+                &::before {
+                    content: '•';
+                    padding: 0 4px;
+                    color: inherit;
+                }
+            }
+        }
+    }
+
+    // .who__btn
+    &__btn {
+        margin-top: 30px;
+        min-width: fit-content;
+    }
+
+    // .who__note
+    &__note {
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+        padding: 20px clamp(20px, 3vw, 30px);
+        border-radius: 12px;
+        background: #ECF7F2;
+
+        color: rgba($color: #324A54, $alpha: .8);
+
+        svg {
+            flex-shrink: 0;
+            width: 20px;
+            height: auto;
+        }
+
+        span {
+            color: #17C49B;
+            font-weight: 700;
+        }
+    }
+}

@@ -1,0 +1,39 @@
+// @import "fonts";
+@import "mixins";
+@import "vars";
+@import "typo";
+@import "reset";
+@import "global";
+
+@import "./UI/inputs";
+@import "./UI/btn";
+@import "./UI/back";
+
+@import "./sections/header";
+@import "./sections/hero";
+@import "./sections/reasons";
+@import "./sections/metrics";
+@import "./sections/method";
+@import "./sections/cases";
+@import "./sections/services";
+@import "./sections/track";
+@import "./sections/reputation";
+@import "./sections/steps";
+@import "./sections/cta-form";
+@import "./sections/faq";
+@import "./sections/insights";
+@import "./sections/footer";
+@import "./sections/thanks";
+@import "./sections/projects";
+@import "./sections/project";
+@import "./sections/why";
+@import "./sections/who";
+@import "./sections/popup";
+@import "./sections/about";
+@import "./sections/blog";
+@import "./sections/tabs";
+@import "./sections/career";
+
+
+@import "../libs/swiper/swiper";
+@import "../libs/magnific/magnific";

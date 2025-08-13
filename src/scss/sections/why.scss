@@ -1,0 +1,123 @@
+.why-section {
+
+    .section {
+        // .section__title
+        &__title {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+            text-transform: uppercase;
+            font-weight: 600;
+
+            &::before {
+                content: '';
+                display: block; 
+                width: 20px;
+                aspect-ratio: 1;
+                background: url(../img/why/icon.svg) center / contain no-repeat;
+            }
+        }
+    }
+
+
+}
+
+.why {
+
+    display: flex;
+    flex-direction: column;
+    gap: clamp(40px, 4vw, 60px);
+    counter-reset: why-counter;
+
+    // .why__item
+    &__item {
+        display: flex;
+        align-items: flex-end;
+        gap: 85px;
+        color: $colorPrimary;
+        
+        &:nth-child(even) {
+            flex-direction: row-reverse;
+            justify-content: flex-start;
+
+            @media screen and (max-width: $breakpoint992) {
+                flex-direction: column;
+                justify-content: unset;
+                align-items: unset;
+            }
+        }
+        
+        counter-increment: why-counter;
+
+        @media screen and (max-width: $breakpoint992) {
+            flex-direction: column;
+            justify-content: unset;
+            align-items: unset;
+        }
+    }
+
+    // .why__img
+    &__img {
+
+        flex: 0 0 414px;
+        height: 250px;
+        border-radius: 12px;
+        overflow: hidden;
+
+        @media screen and (max-width: $breakpoint992) {
+            flex: unset;
+
+            min-height: 250px;
+            height: unset;
+            aspect-ratio: 2 / 1;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+    }
+
+    // .why__body
+    &__body {
+        padding-bottom: 32px;
+
+        position: relative;
+        &::before {
+            content: counter(why-counter, decimal-leading-zero);
+            position: absolute;
+            left: -30px;
+            top: -.7em;
+
+            color: rgba(19, 47, 59, 0.11);
+            font-size: 114px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 1.4;
+            text-transform: uppercase;
+        }
+    }
+
+    // .why__title
+    &__title {
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.4;
+        text-transform: uppercase;
+    }
+
+    // .why__text
+    &__text {
+        margin-top: 12px;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 1.5;
+
+        max-width: 495px;
+    }
+}

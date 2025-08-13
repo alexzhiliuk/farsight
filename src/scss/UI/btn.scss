@@ -1,0 +1,33 @@
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    height: 48px;
+    width: min(350px, 100%);
+    padding: 0 clamp(16px, 2vw, 24px);
+
+    border-radius: 12px;
+    background: $colorPrimary;
+    color: $colorWhite;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; /* 133.333% */
+    text-align: center;
+
+    svg {
+        width: clamp(10px, 4vw, 19px);
+    }
+
+    &_white {
+        background: $colorWhite;
+        color: #212121;
+    }
+
+    &.btn_white.btn_outline {
+        background: none;
+        color: $colorWhite;
+        border: 2px solid $colorWhite;
+    }
+}

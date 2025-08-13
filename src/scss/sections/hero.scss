@@ -1,0 +1,294 @@
+.hero {
+    position: relative;
+    overflow: hidden;
+    padding-top: 100px;
+    padding-bottom: 72px;
+
+    & > * {
+        z-index: 2;
+        position: relative;
+    }
+
+    & > .hero__gradient {
+        z-index: 1;
+    }
+     > .hero__img {
+        z-index: 0;
+    }
+
+    // .hero_margin
+    &_margin {
+        margin-top: 80px;
+        padding-top: 0;
+    }
+
+    // .hero_big
+    &_big {
+        padding-top: clamp(70px, 30vw, 315px);
+
+        .hero__title {
+            @include clamp(margin-top, 24, 28);
+            @include clamp(font-size, 35, 70);
+        }
+
+        .hero__img {
+            @media screen and (max-width: $breakpoint576) {
+                bottom: 30%;
+            }
+        }
+
+        .hero__gradient {
+            @media screen and (min-width: $breakpoint576) {
+                background: linear-gradient(180deg, rgba(19, 47, 59, 0.00) 0%, rgba(19, 47, 59, 0.55) 42.31%, #132F3B 86.06%);
+            }
+            @media screen and (max-width: $breakpoint576) {
+                bottom: 30%;
+            }
+        }
+    }
+
+    .back {
+        margin-bottom: 80px;
+    }
+
+    &__img {
+        position: absolute;
+        inset: 0;
+        z-index: 0;
+        object-position: center center;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center center;
+        }
+    }
+
+    &__gradient {
+        background: rgba($color: #000000, $alpha: .5);
+        position: absolute;
+        inset: 0;
+        z-index: 1;
+        pointer-events: none;
+    }
+
+    // .hero__container
+    &__container {
+    }
+
+    // .hero__title
+    &__title {
+        color: $colorWhite;
+        font-family: $fontTitle;
+        font-size: clamp(35px, 7vw, 64px);
+        font-style: normal;
+        font-weight: 700;
+        line-height: 110%; /* 77px */
+        letter-spacing: 0.45px;
+        text-transform: uppercase;
+    }
+
+    &__subtitle {
+        margin-top: clamp(24px, 3vw, 30px);
+        color: $colorWhite;
+        font-size: clamp(16px, 2vw, 20px);
+        font-style: normal;
+        font-weight: 400;
+        line-height: 125%; /* 25px */
+        margin-top: 30px;
+        max-width: 710px;
+    }
+
+    // .hero__items
+    &__items {
+        @include clamp(margin-top, 16, 28);
+        color: $colorWhite;
+        @include clamp(font-size, 18, 30);
+        font-style: normal;
+        font-weight: 700;
+        line-height: 140%;
+        letter-spacing: 0.45px;
+
+        @media screen and (max-width: $breakpoint576) {
+            font-weight: 500;
+        }
+
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: .2em;
+
+        span {
+            color: $colorLightGreen;
+        }
+    }
+}
+
+.hero-reviews {
+
+    display: grid;
+    grid-template-columns: min-content auto;
+    grid-template-rows: auto auto;
+    column-gap: 12px;
+
+    @media screen and (max-width: $breakpoint576) {
+        grid-template-columns: 1fr;
+        row-gap: 4px;
+    }
+
+    // .hero-reviews__avatars
+    &__avatars {
+        grid-row: span 2;
+        display: flex;
+    }
+
+    // .hero-reviews__avatar
+    &__avatar {
+
+        margin-right: -5px;
+        &:last-child {
+            margin-right: 0;
+        }
+
+        width: clamp(25px, 3vw, 30px);
+        height: clamp(25px, 3vw, 30px);
+        border-radius: 100%;
+        overflow: hidden;
+        border: 1px solid $colorWhite;
+
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    // .hero-reviews__rate
+    &__rate {
+        color: $colorYellow;
+        font-size: clamp(12px, 1.4vw, 14px);
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    // .hero-reviews__stars
+    &__stars {
+        letter-spacing: 2px;
+    }
+
+    // .hero-reviews__text
+    &__text {
+        color: #EDEDED;
+        @include clamp(font-size, 15px, 18px);
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+}
+
+.hero-form {
+
+    @include clamp(margin-top, 36, 66);
+
+    border-radius: 12px;
+    background: $colorWhite;
+    padding: clamp(24px, 4vw, 40px);
+
+    display: flex;
+    gap: clamp(16px, 6vw, 60px);
+
+    @media screen and (max-width: $breakpoint992) {
+        flex-direction: column;
+    }
+
+    // .hero-form__left
+    &__left {
+        flex: 0 1 487px;
+
+        @media screen and (max-width: $breakpoint992) {
+            flex: unset;
+        }
+    }
+
+    // .hero-form__title
+    &__title {
+        color: $colorPrimary;
+        font-size: 28px;
+        @include clamp(font-size, 16, 28);
+        font-style: normal;
+        font-weight: 600;
+        line-height: 120%; /* 33.6px */
+        text-transform: uppercase;
+    }
+
+    // .hero-form__subtitle
+    &__subtitle {
+        margin-top: 10px;
+        color: $colorPrimary;
+        @include clamp(font-size, 9, 16);
+        font-style: normal;
+        font-weight: 400;
+        line-height: 110%; /* 17.6px */
+    }
+
+    // .hero-form__right
+    &__right {
+    }
+
+    // .hero-form__fields
+    &__fields {
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 12px;
+        column-gap: 20px;
+
+        @include flexColumns(2, 20px);
+
+        @media screen and (max-width: $breakpoint576) {
+            row-gap: 8px;
+            @include flexColumns(1, 8px);
+        }
+
+        input {
+            max-width: 350px;
+
+            @media screen and (max-width: $breakpoint576) {
+                max-width: 100%;
+            }
+        }
+    }
+
+    // .hero-form__submit
+    &__submit {
+        margin-top: clamp(24px, 3vw, 30px);
+
+        @media screen and (max-width: $breakpoint576) {
+            width: 100%;
+        }
+    }
+
+    // .hero-form__confirm
+    &__confirm {
+        margin-top: clamp(10px, 2vw, 16px);
+        display: flex;
+        align-items: flex-start;
+        gap: 6px;
+
+        color: #6E6E6E;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 120%; /* 16.8px */
+
+        p {
+            margin-top: 3px;
+            max-width: 328px;
+        }
+
+        a {
+            text-decoration: underline;
+        }
+    }
+}

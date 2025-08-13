@@ -1,0 +1,69 @@
+.input {
+    border-radius: 8px;
+    border: 1px solid rgba(51, 51, 51, 0.20);
+    background: $colorWhite;
+    padding: clamp(8px, 2vw, 14px) clamp(14px, 3vw, 24px);
+
+    font-size: clamp(14px, 2vw, 16px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    height: 52px;
+
+    &::placeholder {
+        color: #333;
+    }
+}
+
+.textarea {
+    @extend .input;
+    resize: none;
+    height: 5.5em;
+}
+
+.checkbox {
+    appearance: none;
+    -webkit-appearance: none;
+
+    width: 20px;
+    height: 20px;
+
+    border: 1px solid $colorPrimary;
+    border-radius: 4px;
+
+    flex-shrink: 0;
+
+    position: relative;
+
+    &::before {
+        content: '';
+        opacity: 0;
+        position: absolute;
+        inset: 4px;
+        border-radius: 2px;
+        background: $colorPrimary;
+    }
+
+    &:checked {
+        &::before {
+            opacity: 1;
+        }
+    }
+
+    &_white {
+
+        border: 1px solid $colorWhite;
+        
+        &::before {
+            background: $colorWhite;
+        }
+    }
+
+    &_gray {
+        border: 1px solid rgba(255, 255, 255, 0.60);
+        
+        &::before {
+            background: rgba(255, 255, 255, 0.60);
+        }
+    }
+}

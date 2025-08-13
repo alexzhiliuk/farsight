@@ -1,0 +1,232 @@
+/* -------- GLOBAL -------- */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: $fontPrimary;
+}
+
+*,
+*::after,
+*::before {
+    transition: $quickTransition;
+}
+
+.container {
+    max-width: calc($conteinerWidth + 4 * $containerPadding);
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 calc(2 * $containerPadding);
+
+    @media screen and (max-width: $breakpoint768) {
+        max-width: calc($conteinerWidth + 2 * $containerPadding);
+        padding: 0 $containerPadding;
+    }
+}
+
+
+html,
+body {
+    max-width: 100vw;
+    min-height: 100vh;
+    overflow-x: clip;
+    scroll-behavior: smooth;
+    color: $colorBlack;
+    background-color: #FAFAFA;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+main {
+    
+}
+
+ul, ol {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    cursor: pointer;
+    background: none;
+}
+
+.lock {
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.section {
+    padding: clamp(40px, 10vw, 95px) 0;
+
+    &_bg-primary {
+        background: $colorPrimary;
+        color: $colorWhite;
+
+        .section {
+            &__title {
+                color: $colorWhite;
+            }
+            &__subtitle {
+                color: #CBD5E1;
+            }
+            &__point {
+                color: #828E9A;
+            }
+        }
+    }
+
+    &_bg-white {
+        background: $colorWhite;
+    }
+
+    &-back {
+        padding-top: 100px;
+        padding-bottom: 0;
+    }
+
+    &__header {
+        margin-bottom: 40px;
+
+        &_1-2 {
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+
+            & > *:first-child {
+                flex: 0 0 467px;
+            }
+            & > *:last-child {
+                flex: 0 1 522px;
+            }
+
+            @media screen and (max-width: $breakpoint992) {
+                flex-direction: column;
+                & > *:first-child {
+                    flex: unset;
+                }
+                & > *:last-child {
+                    flex: unset;
+            }
+            }
+        }
+    }
+
+    &__title {
+        color: $colorPrimary;
+        font-size: 35px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 120%; /* 42px */
+    }
+
+    &__subtitle {
+        margin-top: 15px;
+        color: $colorPrimary;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 120%; /* 21.6px */
+    }
+
+    &__point {
+        color: #324A54;
+        font-size: clamp(16px, 3vw, 25px);
+        font-style: normal;
+        font-weight: 700;
+        line-height: 110%; /* 27.5px */
+        letter-spacing: 0.45px;
+        text-transform: uppercase;
+
+        display: flex;
+        align-items: center;
+        gap: 12px;
+
+        &::before {
+            content: '';
+            height: 12px;
+            width: 12px;
+            background: #4D9D9B;
+            display: block;
+        }
+    }
+
+    &__body {
+        margin-bottom: clamp(40px, 10vw, 95px);
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.free-text {
+    color: $colorPrimary;
+    font-size: clamp(14px, 2vw, 16px);
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.45; /* 156.25% */
+    
+    & > * {
+        margin-bottom: .5em;
+        margin-top: .5em;
+
+        &:first-child {
+            margin-top: 0;
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    strong, b {
+        font-weight: 500;
+    }
+    ul {
+        list-style-type: disc;
+
+        li {
+            display: flex;
+
+            &::before {
+                content: '•';
+                padding: 0 4px;
+                color: inherit;
+            }
+        }
+    }
+    ol {
+        list-style-type: decimal;
+        counter-reset: ol-counter;
+
+        li {
+            display: flex;
+            counter-increment: ol-counter;
+            &::before {
+                content: counter(ol-counter) ".";
+                padding: 0 4px;
+                color: inherit;
+            }
+        }
+    }
+    h2, h3, h4, h5, h6 {
+        font-size: clamp(26px, 2vw, 32px);
+        font-style: normal;
+        font-weight: 500;
+        margin-top: 1.5em;
+    }
+
+}
+
+@mixin hoverWight {
+    &:hover {
+        color: $colorWhite;
+    }
+}

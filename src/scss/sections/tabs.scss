@@ -1,0 +1,89 @@
+.tabs-section {
+
+    @extend .about-section;
+
+    // .tabs-section__container
+    &__container {
+    }
+
+    // .tabs-section__header
+    &__header {
+        @extend .about-section__header;
+    }
+
+    // .tabs-section__title
+    &__title {
+        @extend .about-section__title;
+    }
+
+    // .tabs-section__body
+
+    &__body {
+    }
+}
+
+.tabs {
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+
+    @media screen and (max-width: $breakpoint992) {
+        flex-direction: column;
+        
+    }
+
+    // .tabs__control
+    &__controllers {
+        flex: 0 0 305px;
+        border-radius: 12px;
+        border: 1px solid #E9EAEE;
+        background: #FFF;
+        padding: 30px 0;
+        padding-right: 20px;
+
+        @media screen and (max-width: $breakpoint992) {
+            flex: unset;
+            width: 100%;
+
+        }
+
+        @media screen and (max-width: $breakpoint576) {
+            width: 100%;
+        }
+
+        .tabs__controller {
+            color: $colorPrimary;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 2.6;
+            padding-left: 40px;
+            cursor: pointer;
+
+            &._active {
+                position: relative;
+                &::before {
+                    content: '';
+                    width: 4px;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    bottom: 0;
+                    background: $colorPrimary;
+                }
+            }
+        }
+    }
+
+    // .tabs__body
+    &__body {
+        max-width: 1000px;
+    }
+}
+
+.tab {
+}
+
+

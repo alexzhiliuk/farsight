@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicons -->
+     
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&display=swap&_v=20250813182014" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.min.css?_v=20250813182014">
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css?_v=20250813182014"
+    />
+
+    <!-- JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js?_v=20250813182014"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js?_v=20250813182014"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.2.0/jquery.magnific-popup.min.js?_v=20250813182014"></script>
+
+    <title>Главная</title>
+</head>
+    <body>
+        
+        <section class="popup" data-popup="2" style="display: none;">
+    <form class="popup__inner">
+        <div class="popup__close">
+            <img src="img/popup/close.svg" alt="">
+        </div>
+        <h2 class="popup__title">Узнайте, сколько может приносить ваша недвижимость</h2>
+        <p class="popup__subtitle">Оставьте контакты — мы свяжемся с вами и рассчитаем потенциальную доходность</p>
+        <div class="popup__inputs">
+            <input class="popup__input input" type="text" placeholder="Ваше имя" required>
+            <input class="popup__input input" type="tel" data-tel-input placeholder="+7(__)___-__-__" required>
+            <label class="popup__confirm">
+                <input type="checkbox" class="checkbox">
+                <p>Я даю согласие на обработку моих персональных данных.</p>
+            </label>
+        </div>
+        <button type="submit" class="btn popup__btn">Отправить</button>
+    </form>
+</section>
+        <header class="header header_filled">
+    <div class="header__container container">
+        <a href="index.html" class="header__logo">
+            <img src="img/base/logo.png" alt="" class="_white">
+            <img src="img/base/logo-black.png" alt="" class="_black">
+        </a>
+        <nav class="header__nav">
+            <ul class="header__menu">
+                <li>
+                    <a href="about.html">О компании</a>
+                </li>
+                <li>
+                    <a href="index.html">Управление</a>
+                </li>
+                <li>
+                    <a href="projects.html">Инвестиции</a>
+                </li>
+                <li>
+                    <a href="partner.html">Партнерам</a>
+                </li>
+                <li>
+                    <a href="blog.html">Блог</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="header__lang header-dropdown">
+            <div class="header-dropdown__value">RU</div>
+            <ul class="header-dropdown__list">
+                <li><a href="">EN</a></li>
+                <li><a href="">RU</a></li>
+            </ul>
+        </div>
+        <div class="header__socials">
+            <a href=""><img src="img/socials/WhatsApp.svg" alt=""></a>
+        </div>
+        <div class="header__burger">
+            <img src="img/burger/open.svg" alt="" class="_white">
+            <img src="img/burger/open-black.svg" alt="" class="_black">
+        </div>
+    </div>
+</header>
+
+<div class="mobile-menu">
+    <div class="container mobile-menu__container">
+        <div class="mobile-menu__header">
+            <a href="index.html" class="mobile-menu__logo">
+                <img src="img/base/logo.png" alt="">
+            </a>
+            <div class="mobile-menu__close">
+                <img src="img/burger/close.svg" alt="">
+            </div>
+        </div>
+        <ul class="mobile-menu__list">
+        </ul>
+        <a href="" class="mobile-menu__btn">Забронировать виллу</a>
+        <div class="mobile-menu__socials">
+            <a href=""><img src="img/socials/inst.png" alt=""></a>
+            <a href=""><img src="img/socials/fb.png" alt=""></a>
+            <a href=""><img src="img/socials/yt.png" alt=""></a>
+            <a href=""><img src="img/socials/in.png" alt=""></a>
+        </div>
+    </div>
+</div>
+        <main>            
+            <section class="hero hero_margin hero_big" >
+    <div class="hero__img">
+        <img src="img/hero/bg.png" alt="">
+    </div>
+    <div class="hero__gradient"></div>
+    <div class="hero__container container">
+        <div class="hero-reviews">
+            <div class="hero-reviews__avatars">
+                <div class="hero-reviews__avatar">
+                    <img src="img/hero/avatar1.png" alt="">
+                </div>
+                <div class="hero-reviews__avatar">
+                    <img src="img/hero/avatar2.png" alt="">
+                </div>
+            </div>
+            <div class="hero-reviews__rate">
+                <span>4.8/5 </span> <span class="hero-reviews__stars">★★★★☆</span>
+            </div>
+            <p class="hero-reviews__text">на основании 200+ отзывов владельцев недвижимости</p>
+        </div>
+        <h1 class="hero__title title">WhereasПРОЗРАЧНОЕ УПРАВЛЕНИЕ ВИЛЛАМИ НА БАЛИ </h1>
+        <div class="hero__items">
+                300+ объектов <span>•</span>Открытая отчетность <span>•</span>Без скрытых платежей
+        </div>
+        <form action="" class="hero-form">
+            <div class="hero-form__left">
+                <h2 class="hero-form__title">Давайте посчитаем, сколько вы можете зарабатывать</h2>
+                <p class="hero-form__subtitle">Заполните форму ниже — и получите расчёт доходности от управляющей компании Farsight Villas & Hotels</p>
+            </div>
+            <div class="hero-form__right">
+                <div class="hero-form__fields">
+                    <input type="text" class="input" placeholder="Ваше имя">
+                    <input type="email" class="input" placeholder="Ваш e-mail">
+                    <input type="tel" class="input" data-tel-input placeholder="+7(__)___-__-__">
+                    <input type="text" class="input" placeholder="Введите адрес вашей недвижимости">
+                </div>
+                <button type="submit" class="hero-form__submit btn">
+                    Рассчитать доходность 
+                    <svg width="19" height="19">
+                        <use href="img/button/button-sprite.svg#arrow"></use>
+                    </svg>
+                </button>
+                <label class="hero-form__confirm">
+                    <input type="checkbox" class="checkbox">
+                    <p>
+                        Я даю согласие на обработку моих персональных данных
+                    </p>
+                </label>
+            </div>
+        </form>
+    </div>
+</section>
+            <section class="section">
+    <div class="section__container container">
+        <div class="section__header">
+            <h2 class="section__title">Когда стоит передать <br>управление?</h2>
+        </div>
+        <div class="section__body">
+            <div class="reasons">
+                <div class="reason">
+                    <div class="reason__col">Ожидание = реальность</div>
+                    <h3 class="reason__col">Ваши ожидания не соответствуют реальности рынка</h3>
+                    <p class="reason__col">Вам обещали 20% годовых, а получается 5-8%? Мы объясним реальную ситуацию на рынке и покажем, как максимизировать доходность в текущих условиях без нереалистичных обещаний</p>
+                </div>
+                <div class="reason" style="--rotation: 90deg">
+                    <div class="reason__col">Скрытые затраты</div>
+                    <h3 class="reason__col">Вам обещают низкую комиссию, но скрывают реальные затраты</h3>
+                    <p class="reason__col">Другие управляющие компании заявляют 15% комиссии, но в итоге с "дополнительными услугами" выходит 25-30%? Мы показываем полную стоимость управления сразу - без сюрпризов и доплат</p>
+                </div>
+                <div class="reason" style="--rotation: 180deg">
+                    <div class="reason__col">микроуправление</div>
+                    <h3 class="reason__col">Вы устали менять подрядчиков и решать мелкие задачи лично</h3>
+                    <p class="reason__col">На каждый простой, конфликт с сервисом клининга или неотвеченный гость — тратятся ваши нервы и доход. Мы выстраиваем стабильную систему: с командой, регламентами</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+            <section class="section section_bg-primary mertics-section">
+    <div class="section__container container">
+        <div class="section__header">
+            <h2 class="section__title">Farsight Villas & Hotel Management</h2>
+            <blockquote class="section-quote">
+                <p class="section-quote__text">Мы знаем, что время — самый ценный ресурс. Наша работа — высвободить его для вас</p>
+                <div class="section-quote__author">
+                    <div class="section-quote__avatar">
+                        <img src="img/blockquote/avatar.png" alt="">
+                    </div>
+                    <div class="section-quote__author-info">
+                        <p class="section-quote__author-name">Виктор Плотников</p>
+                        <p class="section-quote__author-position">Генеральный директор компании <br>Farsight Villas & Hotels Management</p>
+                    </div>
+                </div>
+            </blockquote>
+            
+        </div>
+        <div class="section__body">
+            <div class="metrics">
+                <div class="metric">
+                    <div class="metric__header">
+                        <div class="metric__tag">управление</div>
+                        <hr class="metric__hr">
+                    </div>
+                    <div class="metric__body">
+                        <div class="metric__row">
+                            <div class="metric__num">300+</div>
+                            <div class="metric__title">объектов недвижимости</div>
+                        </div>
+                        <p class="metric__text">Управляем более чем 300 объектами, используя алгоритмы динамического ценообразования</p>
+                    </div>
+                </div>
+                <div class="metric">
+                    <div class="metric__header">
+                        <div class="metric__tag">глобальная сеть</div>
+                        <hr class="metric__hr">
+                    </div>
+                    <div class="metric__body">
+                        <div class="metric__row">
+                            <div class="metric__num">1000+</div>
+                            <div class="metric__title">партнеров</div>
+                        </div>
+                        <p class="metric__text">Мы подключаем вашу недвижимость к 50 OTA и 1000+ туристическим агентствам, увеличивая доход на 11–15%</p>
+                    </div>
+                </div>
+                <div class="metric">
+                    <div class="metric__header">
+                        <div class="metric__tag">команда</div>
+                        <hr class="metric__hr">
+                    </div>
+                    <div class="metric__body">
+                        <div class="metric__row">
+                            <div class="metric__num">407+</div>
+                            <div class="metric__title">экспертов в команде</div>
+                        </div>
+                        <p class="metric__text">Комплексный подход к каждому проекту благодаря слаженному взаимодействию специалистов</p>
+                    </div>
+                </div>
+                <div class="metric">
+                    <div class="metric__header">
+                        <div class="metric__tag">Финансовый контроль</div>
+                        <hr class="metric__hr">
+                    </div>
+                    <div class="metric__body">
+                        <div class="metric__row">
+                            <div class="metric__num">100%</div>
+                            <div class="metric__title">прозрачность отчетов</div>
+                        </div>
+                        <p class="metric__text">Следите за доходом, бронированиями, загрузкой в режиме 24/7 через личный кабинет</p>
+                    </div>
+                </div>
+                <div class="metric">
+                    <div class="metric__header">
+                        <div class="metric__tag">маркетинг</div>
+                        <hr class="metric__hr">
+                    </div>
+                    <div class="metric__body">
+                        <div class="metric__row">
+                            <div class="metric__num">+15%</div>
+                            <div class="metric__title">к доходу от бронирований</div>
+                        </div>
+                        <p class="metric__text">Сокращаем комиссии OTA на 15% — ваша прибыль растёт за счёт прямых продаж и маркетинговых стратегий</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+            <section class="section">
+    <div class="section__container container">
+        <div class="section__header section__header_1-2">
+            <p class="section__point">метод работы</p>
+            <h2 class="section__title">Превращаем вашу недвижимость в стабильный доход — без вашего участия</h2>
+        </div>
+        <div class="section__body">
+            <div class="methods">
+                <div class="method-item">
+                    <h3 class="method-item__title">Анализ рынка и финансовое моделирование</h3>
+                    <p class="method-item__text">Оцениваем потенциал вашей недвижимости и просчитываем будущую прибыль на основе данных — вы точно знаете, на что можно рассчитывать</p>
+                </div>
+                <div class="method-item">
+                    <h3 class="method-item__title">Подключение маркетинговой команды</h3>
+                    <p class="method-item__text">Создаём контент, оптимизируем объявления, продвигаем виллу в соцсетях, на площадках и через агентскую сеть — делаем всё, чтобы ваша вилла выделялась</p>
+                </div>
+                <div class="method-item">
+                    <h3 class="method-item__title">Безупречный сервис и уход за виллой</h3>
+                    <p class="method-item__text">Обслуживание в стиле бутик-отеля: чистота, комфорт и внимание к деталям. Персонал доступен круглосуточно для экстренных ситуаций</p>
+                </div>
+                <div class="method-item">
+                    <h3 class="method-item__title">Клиентоориентированное управление</h3>
+                    <p class="method-item__text">Слушаем гостей и быстро реагируем на их пожелания. У нас сильная команда, которая умеет реализовывать нестандартные запросы</p>
+                </div>
+                <div class="method-item">
+                    <h3 class="method-item__title">24/7 поддержка гостей и владельцев</h3>
+                    <p class="method-item__text">Обрабатываем брони и помогаем гостям без выходных. Команда поддержки всегда на связи — даже ночью</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+            <section class="section">
+    <div class="section__container container">
+        <div class="section__header section__header_1-2">
+            <p class="section__point">кейсы</p>
+            <h2 class="section__title">Потенциал доход вашей недвижимости на примере наших проектов</h2>
+        </div>
+        <div class="section__body">
+            <div class="cases">
+                <div class="cases-swiper swiper" id="casesSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="case-slide">
+                                <div class="case-slide__header">
+                                    <div>
+                                        <h3 class="case-slide__title">Вилла “Martini” / +58% к доходу за 6 месяцев</h3>
+                                        <p class="case-slide__subtitle">Современная вилла в районе Семиньяк</p>
+                                    </div>
+                                    <a href="" class="case-slide__more">Смотреть больше кейсов</a>
+                                </div>
+                                <div class="case-slide__body">
+                                    <div class="case-slide__table">
+                                        <div class="case-slide__thead">
+                                            <div class="case-slide__th">метрика</div>
+                                            <div class="case-slide__th">было</div>
+                                            <div class="case-slide__th">стало</div>
+                                        </div>
+                                        <div class="case-slide__tbody">
+                                            <div class="case-slide__tr">
+                                                <div class="case-slide__td">Годовой доход владельца</div>
+                                                <div class="case-slide__td">$49 200</div>
+                                                <div class="case-slide__td">$78 000</div>
+                                            </div>
+                                            <div class="case-slide__tr">
+                                                <div class="case-slide__td">Заполняемость</div>
+                                                <div class="case-slide__td">45%</div>
+                                                <div class="case-slide__td">73%</div>
+                                            </div>
+                                            <div class="case-slide__tr">
+                                                <div class="case-slide__td">Стоимость за ночь</div>
+                                                <div class="case-slide__td">$272</div>
+                                                <div class="case-slide__td">$305</div>
+                                            </div>
+                                            <div class="case-slide__tr">
+                                                <div class="case-slide__td">Оценка (отзывы)</div>
+                                                <div class="case-slide__td"><div class="_rate"><span class="_star">★</span>4.1</div></div>
+                                                <div class="case-slide__td"><div class="_rate"><span class="_star">★</span>4.8</div></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="case-slide__image">
+                                        <img src="img/cases/image.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="case-slide">
+                                <div class="case-slide__header">
+                                    <div>
+                                        <h3 class="case-slide__title">Вилла “Martini” / +58% к доходу за 6 месяцев</h3>
+                                        <p class="case-slide__subtitle">Современная вилла в районе Семиньяк</p>
+                                    </div>
+                                    <a href="" class="case-slide__more">Смотреть больше кейсов</a>
+                                </div>
+                                <div class="case-slide__body">
+                                    <div class="case-slide__table">
+                                        <div class="case-slide__thead">
+                                            <div class="case-slide__th">метрика</div>
+                                            <div class="case-slide__th">было</div>
+                                            <div class="case-slide__th">стало</div>
+                                        </div>
+                                        <div class="case-slide__tbody">
+                                            <div class="case-slide__tr">
+                                                <div class="case-slide__td">Годовой доход владельца</div>
+                                                <div class="case-slide__td">$49 200</div>
+                                                <div class="case-slide__td">$78 000</div>
+                                            </div>
+                                            <div class="case-slide__tr">
+                                                <div class="case-slide__td">Заполняемость</div>
+                                                <div class="case-slide__td">45%</div>
+                                                <div class="case-slide__td">73%</div>
+                                            </div>
+                                            <div class="case-slide__tr">
+                                                <div class="case-slide__td">Стоимость за ночь</div>
+                                                <div class="case-slide__td">$272</div>
+                                                <div class="case-slide__td">$305</div>
+                                            </div>
+                                            <div class="case-slide__tr">
+                                                <div class="case-slide__td">Оценка (отзывы)</div>
+                                                <div class="case-slide__td"><div class="_rate"><span class="_star">★</span>4.1</div></div>
+                                                <div class="case-slide__td"><div class="_rate"><span class="_star">★</span>4.8</div></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="case-slide__image">
+                                        <img src="img/cases/image.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cases-swiper__footer">
+                        <div class="swiper-counter" id="casesSwiperCounter"></div>
+                        <div class="swiper-progress" id="casesSwiperProgress"></div>
+                        <div class="swiper-navigation">
+                            <button class="swiper-navigation-prev" id="casesSwiperPrev"><img src="img/cases/arrow.svg" alt=""></button>
+                            <button class="swiper-navigation-next" id="casesSwiperNext"><img src="img/cases/arrow.svg" alt=""></button>
+                        </div>
+                    </div>
+                    <a href="" class="cases-swiper__btn btn">
+                        Рассчитать доходность
+                        <svg width="19" height="19">
+                            <use href="img/button/button-sprite.svg#arrow"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+            <section class="section section_bg-primary services-section">
+    <div class="section__container container">
+        <div class="section__header">
+            <p class="section__point">услуги</p>
+            <div>
+                <h2 class="section__title">Варианты управления</h2>
+                <p class="section__subtitle">
+                    Мы предлагаем два варианта: полное или маркетинговое управление. <br>Вы остаетесь собственником, а мы берём на себя все операционные задачи — от приёма гостей до отчётности. Прозрачные процессы, команда на месте и измеримый результат.
+                </p>
+            </div>
+            <div class="services-section__img">
+                <img src="img/services/image.png" alt="">
+            </div>
+        </div>
+        <div class="section__body">
+            <div class="services">
+                <blockquote class="section-quote">
+                    <p class="section-quote__text">Мы знаем, что время — самый ценный ресурс. Наша работа — высвободить его для вас</p>
+                    <div class="section-quote__author">
+                        <div class="section-quote__avatar">
+                            <img src="img/blockquote/avatar.png" alt="">
+                        </div>
+                        <div class="section-quote__author-info">
+                            <p class="section-quote__author-name">Виктор Плотников</p>
+                            <p class="section-quote__author-position">Генеральный директор компании <br>Farsight Villas & Hotels Management</p>
+                        </div>
+                    </div>
+                </blockquote>
+                <div class="service">
+                    <div class="service__header">
+                        <h3 class="service__title">Полное управление</h3>
+                        <p class="service__subtitle">Берём на себя всё — от приёма гостей до ремонта и отчётности</p>
+                        <a href="javascript:void(0)" class="service__btn btn btn_white js-open-popup" data-popup="2">Оставить заявку</a>
+                    </div>
+                    <div class="service__body">
+                        <div class="service__item">
+                            <div class="service__list-title">Маркетинг</div>
+                            <ul class="service__list">
+                                <li>Стратегия маркетинга</li>
+                                <li>Профессиональная фото- и видеосъёмка недвижимости</li>
+                                <li>Оптимизация листингов в каталогах и на OTA-платформах </li>
+                                <li>Продвижение объектов с помощью цифрового маркетинга </li>
+                                <li>Глобальное размещение недвижимости на 25+ площадках бронирования</li>
+                            </ul>
+                        </div>
+                        <div class="service__item">
+                            <div class="service__list-title">Управление</div>
+                            <ul class="service__list">
+                                <li>Личный кабинет с онлайн-отчётностью и контролем объекта</li>
+                                <li>Административная поддержка владельцев</li>
+                                <li>Беспрерывное исследование конкурентов и рынка</li>
+                                <li>Настройка менеджера каналов</li>
+                                <li>Управление коммунальными услугами и счетами</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="service service_gray">
+                    <div class="service__header">
+                        <h3 class="service__title">Маркетинговое управление</h3>
+                        <p class="service__subtitle">Настраиваем продвижение, повышаем загрузку, делаем ваш объект заметным</p>
+                        <a href="javascript:void(0)" class="service__btn btn btn_white btn_outline js-open-popup" data-popup="2">Оставить заявку</a>
+                    </div>
+                    <div class="service__body">
+                        <div class="service__item">
+                            <div class="service__list-title">Маркетинг</div>
+                            <ul class="service__list">
+                                <li class="_gray">Стратегия маркетинга</li>
+                                <li class="_gray">Профессиональная фото- и видеосъёмка недвижимости</li>
+                                <li class="_gray">Оптимизация листингов в каталогах и на OTA-платформах </li>
+                                <li class="_gray">Продвижение объектов с помощью цифрового маркетинга </li>
+                                <li class="_gray">Глобальное размещение недвижимости на 25+ площадках бронирования</li>
+                            </ul>
+                        </div>
+                        <div class="service__item">
+                            <div class="service__list-title">Управление</div>
+                            <ul class="service__list">
+                                <li class="_gray">Личный кабинет с онлайн-отчётностью и контролем объекта</li>
+                                <li class="_gray">Административная поддержка владельцев</li>
+                                <li class="_gray">Беспрерывное исследование конкурентов и рынка</li>
+                                <li class="_disabled">Настройка менеджера каналов</li>
+                                <li class="_disabled">Управление коммунальными услугами и счетами</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="services-section__footer-image">
+                <img src="img/services/footer-image.png" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+            <section class="section section_bg-primary">
+    <div class="section__container container">
+        <div class="section__header">
+            <h2 class="section__title">Отслеживайте доходность <br>и заполняемость  в режиме реального времени</h2>
+        </div>
+        <div class="section__body">
+            <div class="track swiper" id="trackSwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="track-item">
+                            <div class="track-item__icon">
+                                <img src="img/track/icon1.svg" alt="">
+                            </div>
+                            <h3 class="track-item__title">Прозрачная отчетность</h3>
+                            <p class="track-item__text">Детализированные инвойсы, чтобы контролировать все начисления</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="track-item">
+                            <div class="track-item__icon">
+                                <img src="img/track/icon2.svg" alt="">
+                            </div>
+                            <h3 class="track-item__title">Финансовая аналитика</h3>
+                            <p class="track-item__text">Следите за доходностью объекта </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="track-item">
+                            <div class="track-item__icon">
+                                <img src="img/track/icon3.svg" alt="">
+                            </div>
+                            <h3 class="track-item__title">Календарь</h3>
+                            <p class="track-item__text">Просматривайте бронирования за любой произвольный период </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="track-item">
+                            <div class="track-item__icon">
+                                <img src="img/track/icon4.svg" alt="">
+                            </div>
+                            <h3 class="track-item__title">Клиентский чат</h3>
+                            <p class="track-item__text">Общайтесь с управляющей компанией напрямую </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="track__footer">
+                    <div class="swiper-counter" id="trackSwiperCounter"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+            <section class="section reputation-section">
+    <div class="section__container container">
+        <div class="section__header">
+            <h2 class="section__title">Наша репутация строится на доверии наших клиентов</h2>
+            <div class="brands">
+                <div class="brands__item">
+                    <img src="img/reputation/brand1.png" alt="">
+                </div>
+                <div class="brands__item">
+                    <img src="img/reputation/brand2.png" alt="">
+                </div>
+                <div class="brands__item">
+                    <img src="img/reputation/brand3.png" alt="">
+                </div>
+                <div class="brands__item">
+                    <img src="img/reputation/brand4.png" alt="">
+                </div>
+                <div class="brands__item">
+                    <img src="img/reputation/brand5.png" alt="">
+                </div>
+                <div class="brands__item">
+                    <img src="img/reputation/brand6.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="section__body">
+            <div class="reputation-swiper swiper" id="repSwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="reputation-slide">
+                            <div class="reputation-slide__video">
+                                <iframe src="https://www.youtube.com/embed/kU48CSz74Js?si=7bZGHBoAg_CST_UJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <div class="reputation-slide__body">
+                                <h3 class="reputation-slide__title">Jutta, London Stock Exchange Group, villa owner in Bali</h3>
+                                <p class="reputation-slide__text">"It’s actually working really smoothly — I’m really happy with how everything is managed."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="reputation-slide">
+                            <div class="reputation-slide__video">
+
+                            </div>
+                            <div class="reputation-slide__body">
+                                <h3 class="reputation-slide__title">Jutta, London Stock Exchange Group, villa owner in Bali</h3>
+                                <p class="reputation-slide__text">"It’s actually working really smoothly — I’m really happy with how everything is managed."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="reputation-slide">
+                            <div class="reputation-slide__video">
+
+                            </div>
+                            <div class="reputation-slide__body">
+                                <h3 class="reputation-slide__title">Jutta, London Stock Exchange Group, villa owner in Bali</h3>
+                                <p class="reputation-slide__text">"It’s actually working really smoothly — I’m really happy with how everything is managed."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reputation-swiper__footer">
+                    <div class="swiper-counter" id="repSwiperCounter"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+            <section class="section steps-section">
+    <div class="section__container container">
+        <div class="section__header">
+            <h2 class="section__title">Всего 4 шага отеделяет вас от заметного роста ваших доходов </h2>
+        </div>
+        <div class="secttion__body">
+            <div class="steps">
+                <div class="step">
+                    <p class="step__label">шаг 1</p>
+                    <h3 class="step__title">Анализ и подготовка</h3>
+                    <p class="step__text">Оцениваем потенциал объекта, рассчитываем доходность и определяем формат сотрудничества — полное управление или только маркетинг</p>
+                </div>
+                <div class="step" style="--rotation: 90deg">
+                    <p class="step__label">шаг 2</p>
+                    <h3 class="step__title">Подписание договора</h3>
+                    <p class="step__text">Подписываем договор в удобном для вас формате (бумажном или онлайн). Собираем всю информацию об объекте, включая фото, и берём текущие объявления в работу</p>
+                </div>
+                <div class="step" style="--rotation: 180deg">
+                    <p class="step__label">шаг 3</p>
+                    <h3 class="step__title">Подготовка к запуску</h3>
+                    <p class="step__text">Формируем команды, создаём чаты, проводим инвентаризацию, подбираем персонал. Настраиваем процессы и личный кабинет владельца</p>
+                </div>
+                <div class="step" style="--rotation: 270deg">
+                    <p class="step__label">шаг 4</p>
+                    <h3 class="step__title">Старт аренды</h3>
+                    <p class="step__text">Запускаем размещение, получаем первые бронирования и начинаем продвижение. После тестового периода выходим на стабильный доход</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+            <section class="section section_bg-primary">
+    <div class="section__container container">
+        <div class="section__body">
+            <form action="" class="cta-form">
+                <div class="cta-form__left">
+                    <h2 class="cta-form__title">ОСТАЛИСЬ ВОПРОСЫ?</h2>
+                    <p class="cta-form__subtitle">ЗМы с радостью на них ответим! Смело оставляйте свою заявку и наши менеджеры свяжутся с вами</p>
+                </div>
+                <div class="cta-form__right">
+                    <div class="cta-form__fields">
+                        <input type="text" class="input" placeholder="Ваше имя">
+                        <input type="tel" class="input" data-tel-input placeholder="+7(__)___-__-__">
+                        <input type="email" class="input" placeholder="Ваш e-mail">
+                    </div>
+                    <button type="submit" class="cta-form__submit btn">
+                        Получить консультацию
+                        <svg width="19" height="19">
+                            <use href="img/button/button-sprite.svg#arrow"></use>
+                        </svg>
+                    </button>
+                    <label class="cta-form__confirm">
+                        <input type="checkbox" class="checkbox checkbox_white">
+                        <p>
+                            Я даю согласие на обработку моих персональных данных
+                        </p>
+                    </label>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+            <section class="section faq-section">
+    <div class="section__container container">
+        <div class="section__header">
+            <p class="section__point">FAQ</p>
+            <div>
+                <h2 class="section__title">Часто задаваемые вопросы</h2>
+                <div class="faq">
+                    <div class="faq-item">
+                        <div class="faq-item__header">
+                            Чем отличается компания Farsight Villas & Hotels Management от других управляющих компаний?
+                        </div>
+                        <div class="faq-item__body">
+                            <div class="faq-item__wrapper">
+                                <p>Каждый из наших апартаментов имеет различную политику, поэтому мы приглашаем вас проверить информацию для каждой квартиры или виллы, если четвероногие друзья разрешены.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-item__header">
+                            Как выглядит стандартный договор о передаче виллы?
+                        </div>
+                        <div class="faq-item__body">
+                            <div class="faq-item__wrapper">
+                                <p>Каждый из наших апартаментов имеет различную политику, поэтому мы приглашаем вас проверить информацию для каждой квартиры или виллы, если четвероногие друзья разрешены.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-item__header">
+                            Как именно команда менеджеров Farsight Villas & Hotels будет управлять моей собственностью?
+                        </div>
+                        <div class="faq-item__body">
+                            <div class="faq-item__wrapper">
+                                <p>Каждый из наших апартаментов имеет различную политику, поэтому мы приглашаем вас проверить информацию для каждой квартиры или виллы, если четвероногие друзья разрешены.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-item__header">
+                            Как именно команда Farsight Villas & Hotels Management будет продвигать мою собственность?
+                        </div>
+                        <div class="faq-item__body">
+                            <div class="faq-item__wrapper">
+                                <p>Каждый из наших апартаментов имеет различную политику, поэтому мы приглашаем вас проверить информацию для каждой квартиры или виллы, если четвероногие друзья разрешены.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+            <section class="section insight-section">
+    <div class="section__container container">
+        <div class="section__header">
+            <p class="section__point">инсайты</p>
+            <h2 class="section__title">Инсайты, которыми стоит поделиться</h2>
+            <a href="" class="insight-section__all">Читать все</a>
+        </div>
+        <div class="section__body">
+            
+            <div class="insights-swiper swiper" id="insightsSwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a class="insight">
+                            <div class="insight__img">
+                                <img src="img/insights/insight.png" alt="">
+                            </div>
+                            <div class="insight__header">
+                                <div class="insight__tag">Гостевой сервис</div>
+                                <div class="insight__date">Feb 8, 2025</div>
+                            </div>
+                            <h3 class="insight__title">Как привлечь постоянных гостей</h3>
+                            <p class="insight__text">Чтобы привлечь повторных гостей, а не тех, кто приезжает впервые, необходимо понимать свою целевую аудиторию, оптимизировать свою</p>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a class="insight">
+                            <div class="insight__img">
+                                <img src="img/insights/insight.png" alt="">
+                            </div>
+                            <div class="insight__header">
+                                <div class="insight__tag">Гостевой сервис</div>
+                                <div class="insight__date">Feb 8, 2025</div>
+                            </div>
+                            <h3 class="insight__title">Как привлечь постоянных гостей</h3>
+                            <p class="insight__text">Чтобы привлечь повторных гостей, а не тех, кто приезжает впервые, необходимо понимать свою целевую аудиторию, оптимизировать свою</p>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a class="insight">
+                            <div class="insight__img">
+                                <img src="img/insights/insight.png" alt="">
+                            </div>
+                            <div class="insight__header">
+                                <div class="insight__tag">Гостевой сервис</div>
+                                <div class="insight__date">Feb 8, 2025</div>
+                            </div>
+                            <h3 class="insight__title">Как привлечь постоянных гостей</h3>
+                            <p class="insight__text">Чтобы привлечь повторных гостей, а не тех, кто приезжает впервые, необходимо понимать свою целевую аудиторию, оптимизировать свою</p>
+                        </a>
+                    </div>
+                    
+                </div>
+                <div class="insights-swiper__footer">
+                    <div class="swiper-counter" id="insightsSwiperCounter"></div>
+                    <div class="swiper-progress" id="insightsSwiperProgress"></div>
+                    <div class="swiper-navigation">
+                        <button class="swiper-navigation-prev" id="insightsSwiperPrev"><img src="img/cases/arrow.svg" alt=""></button>
+                        <button class="swiper-navigation-next" id="insightsSwiperNext"><img src="img/cases/arrow.svg" alt=""></button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+        </main>
+        <footer class="footer">
+    <div class="footer__container container">
+        <div class="footer__top">
+            <div class="footer-swiper swiper" id="footerSwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <p>FARSIGHT MANAGEMENT</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p>FARSIGHT MANAGEMENT</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p>FARSIGHT MANAGEMENT</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p>FARSIGHT MANAGEMENT</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p>FARSIGHT MANAGEMENT</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p>FARSIGHT MANAGEMENT</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__body">
+            <div class="footer__col">
+                <a href="index.html" class="footer__logo">
+                    <img src="img/base/logo.png" alt="">
+                </a>
+                <div class="footer__socials">
+                    <a href=""><img src="img/socials/inst.png" alt=""></a>
+                    <a href=""><img src="img/socials/fb.png" alt=""></a>
+                    <a href=""><img src="img/socials/yt.png" alt=""></a>
+                    <a href=""><img src="img/socials/in.png" alt=""></a>
+                </div>
+                <nav class="footer__nav">
+                    <ul class="footer__menu">
+                        <li><a href="">О Компании</a></li>
+                        <li><a href="">Вопросы и ответы</a></li>
+                        <li><a href="">Проекты для инвестиций</a></li>
+                        <li><a href="">Для партнеров</a></li>
+                        <li><a href="">Вакансии</a></li>
+                    </ul>
+                </nav>
+                <a href="" class="footer__btn btn btn_white btn_outline">Забронировать виллу</a>
+            </div>
+            <div class="footer__col">
+                <div class="footer__office">
+                    <div class="footer__title">Офис:</div>
+                    <p class="footer__text">Улица Райя Улувату Печату, район Печату, округ Кута Селатан, округ Бадунг, Бали 80361, Индонезия</p>
+                </div>
+                <div class="footer__connect">
+                    <div class="footer__title">Мы на связи</div>
+                    <div class="footer__massengers">
+                        <a href="" class="footer__massenger">
+                            <img src="img/footer/tg.svg" alt="">
+                            Telegram
+                        </a>
+                        <a href="" class="footer__massenger">
+                            <img src="img/footer/wts.svg" alt="">
+                            WhatsApp
+                        </a>
+                        <a href="" class="footer__massenger">
+                            <img src="img/footer/email.svg" alt="">
+                            E-mail
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__socials">
+                    <a href=""><img src="img/socials/inst.png" alt=""></a>
+                    <a href=""><img src="img/socials/fb.png" alt=""></a>
+                    <a href=""><img src="img/socials/yt.png" alt=""></a>
+                    <a href=""><img src="img/socials/in.png" alt=""></a>
+                </div>
+            </div>
+            <div class="footer__col">
+                <div>
+                    <div class="footer__title">Узнать больше об управлении недвижимостью</div>
+                    <p class="footer__text">Оставьте e-mail — пришлём материалы и будем делиться новыми кейсами</p>
+                    <div class="footer__form">
+                        <div class="footer__field">
+                            <input type="email" placeholder="E-mail">
+                            <button type="submit"><img src="img/footer/submit.svg" alt=""></button>
+                        </div>
+                        <label class="footer__confirm">
+                            <input type="checkbox" class="checkbox checkbox_gray">
+                            <p>Подписываясь, вы принимаете <a href="">Политику конфиденциальности</a> и условия публичной оферты</p>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <small class="footer__copy">© PT Farsight Villas & Hotels Management Company, 2025</small>
+            <ul class="footer__politics">
+                <li><a href="">Privacy Policy</a></li>
+                <li><a href="">Cookie Policy</a></li>
+            </ul>
+        </div>
+
+    </div>
+</footer>
+
+        <script src="js/app.min.js?_v=20250813182014"></script>
+    </body>
+</html>

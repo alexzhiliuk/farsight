@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include('html/head.html',{
+        "title": "Статья"
+    })
+    <body>
+
+        @@include('html/header.html', {"class": "header_black"})
+        <main>            
+            @@include('html/article/article.html')
+            @@include('html/article/maybe.html')
+        
+        </main>
+        @@include('html/footer.html')
+
+        <script src="js/app.min.js"></script>
+    </body>
+</html>

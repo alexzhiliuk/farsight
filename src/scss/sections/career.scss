@@ -1,0 +1,125 @@
+.career-section {
+
+    @extend .about-section;
+
+    // .career-section__container
+    &__container {
+    }
+
+    // .career-section__header
+    &__header {
+        @extend .about-section__header;
+    }
+
+    // .career-section__title
+    &__title {
+        @extend .about-section__title;
+    }
+
+    // .career-section__body
+    &__body {
+    }
+}
+
+.career-form {
+
+    margin-top: clamp(40px, 6vw, 60px);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    border-radius: 12px;
+    background: #FFF;
+    padding: clamp(12px, 3vw, 30px) clamp(12px, 3vw, 40px);
+
+    // .career-form__title
+    &__title {
+        color: $colorPrimary;
+        font-size: clamp(25px, 3vw, 32px);
+        font-style: normal;
+        font-weight: 600;
+        line-height: 1.4;
+        text-transform: uppercase;
+    }
+
+    // .career-form__fields
+    &__fields {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        textarea {
+            border-radius: 8px;
+            border: 1px solid rgba(51, 51, 51, 0.20);
+            resize: none;
+            height: 115px;
+            padding: 1em;
+        }
+    }
+
+    // .career-form__footer
+    &__footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+}
+
+.file-picker {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    color: $colorPrimary;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.33; /* 133.333% */
+    position: relative;
+    cursor: pointer;
+
+    input[type="file"] {
+        cursor: pointer;
+        opacity: 0;
+        position: absolute;
+        inset: 0;
+    }
+
+    img {
+        width: 24px;
+        height: auto;
+        display: block;
+    }
+}
+
+.file {
+    display: none;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 4px;
+
+    font-size: 18px;
+    line-height: 1.4;
+
+    &__icon {
+        width: 31px;
+        height: auto;
+        display: block;
+        margin-right: 12px;
+    }
+
+    &__check {
+        width: 19px;
+        height: auto;
+        display: block;
+    }
+
+    &__remove {
+        color: #0066CC;
+        margin-left: 20px;
+        cursor: pointer;
+    }
+}
+

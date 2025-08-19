@@ -99,6 +99,7 @@
 
         li {
             @include hoverWight;
+            transition: all 60ms ease;
         }
     }
 
@@ -299,12 +300,12 @@
     }
 
     .swiper-slide {
-        width: 640px;
+        width: 485px;
         p {
             display: flex;
             align-items: center;
             gap: 15px;
-            font-family: $fontTitle !important;
+            font-family: $fontTitleEn !important;
             &::after {
                 content: '';
                 background: url(../img/footer/swiper-icon.png) center / contain no-repeat;

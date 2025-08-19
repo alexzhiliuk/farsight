@@ -78,6 +78,13 @@
         line-height: 110%;
 
         white-space: nowrap;
+
+        li {
+            transition: all 60ms ease;
+            &:hover {
+                color: #09817B;
+            }
+        }
     }
 
     // .header__lang

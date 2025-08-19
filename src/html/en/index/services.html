@@ -91,3 +91,19 @@
         </div>
     </div>
 </section>
+<script>
+$(document).ready(function() {
+    $('.service').hover(
+        function() {
+            var $body = $(this).find('.service__body');
+            if ($body[0].scrollHeight > $body[0].clientHeight) {
+                $body.stop().animate({ scrollTop: 30 }, 200)
+                      .animate({ scrollTop: 0 }, 300);
+            }
+        },
+        function() {
+            $(this).find('.service__body').stop().animate({ scrollTop: 0 }, 200);
+        }
+    );
+});
+</script>

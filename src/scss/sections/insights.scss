@@ -15,7 +15,13 @@
     // .insight-section__all
     &__all {
         @extend .section__point;
-        @extend .section__point_en;
+        
+        &_en {
+            @extend .section__point_en;
+            text-transform: none !important;
+        }
+
+        text-transform: none;
 
         margin-top: 30px;
 

@@ -88,6 +88,11 @@
     padding: 20px;
     border-radius: 12px;
     border: 3px solid #09817B;
+
+    &:hover {
+        box-shadow: 0 0 16px rgba(79, 209, 197, 0.25);
+        background-color: #173C4B;
+    }
     
     &_gray {
         border: 1px solid #485E76;

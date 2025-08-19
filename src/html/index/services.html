@@ -51,6 +51,20 @@
                                 <li>Беспрерывное исследование конкурентов и рынка</li>
                                 <li>Настройка менеджера каналов</li>
                                 <li>Управление коммунальными услугами и счетами</li>
+                                <li>Регламентное техобслуживание</li>
+                                <li>Подбор, обучение и управление персоналом</li>
+                                <li>Контрольный список инвентаризации имущества</li>
+                                <li>Управление обслуживанием бассейнов и садов</li>
+                            </ul>
+                        </div>
+                        <div class="service__item">
+                            <div class="service__list-title">Услуги для гостей</div>
+                            <ul class="service__list">
+                                <li>Полное ведение бронирований</li>
+                                <li>Сопровождение при заездах/выездах гостей</li>
+                                <li>Проверка и прием объекта после отъезда гостей</li>
+                                <li>Обеспечение гостей бельём, полотенцами и принадлежностями</li>
+                                <li>Дежурный обслуживающий персонал 24/7 и команда по благоустройству дома</li>
                             </ul>
                         </div>
                     </div>
@@ -73,6 +87,16 @@
                             </ul>
                         </div>
                         <div class="service__item">
+                            <div class="service__list-title">Услуги для гостей</div>
+                            <ul class="service__list">
+                                <li class="_disabled">Полное ведение бронирований</li>
+                                <li class="_disabled">Сопровождение при заездах/выездах гостей</li>
+                                <li class="_disabled">Проверка и прием объекта после отъезда гостей</li>
+                                <li class="_disabled">Обеспечение гостей бельём, полотенцами и принадлежностями</li>
+                                <li class="_disabled">Дежурный обслуживающий персонал 24/7 и команда по благоустройству дома</li>
+                            </ul>
+                        </div>
+                        <div class="service__item">
                             <div class="service__list-title">Управление</div>
                             <ul class="service__list">
                                 <li class="_gray">Личный кабинет с онлайн-отчётностью и контролем объекта</li>
@@ -80,6 +104,10 @@
                                 <li class="_gray">Беспрерывное исследование конкурентов и рынка</li>
                                 <li class="_disabled">Настройка менеджера каналов</li>
                                 <li class="_disabled">Управление коммунальными услугами и счетами</li>
+                                <li class="_disabled">Регламентное техобслуживание</li>
+                                <li class="_disabled">Подбор, обучение и управление персоналом</li>
+                                <li class="_disabled">Контрольный список инвентаризации имущества</li>
+                                <li class="_disabled">Управление обслуживанием бассейнов и садов</li>
                             </ul>
                         </div>
                     </div>
@@ -91,3 +119,19 @@
         </div>
     </div>
 </section>
+<script>
+$(document).ready(function() {
+    $('.service').hover(
+        function() {
+            var $body = $(this).find('.service__body');
+            if ($body[0].scrollHeight > $body[0].clientHeight) {
+                $body.stop().animate({ scrollTop: 30 }, 200)
+                      .animate({ scrollTop: 0 }, 300);
+            }
+        },
+        function() {
+            $(this).find('.service__body').stop().animate({ scrollTop: 0 }, 200);
+        }
+    );
+});
+</script>

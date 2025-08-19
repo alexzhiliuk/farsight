@@ -11,20 +11,20 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&display=swap&_v=20250819152310" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&display=swap&_v=20250819164259" rel="stylesheet">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="css/style.min.css?_v=20250819152310">
+    <link rel="stylesheet" href="css/style.min.css?_v=20250819164259">
 
     <link
       rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css?_v=20250819152310"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css?_v=20250819164259"
     />
 
     <!-- JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js?_v=20250819152310"></script>
-    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js?_v=20250819152310"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.2.0/jquery.magnific-popup.min.js?_v=20250819152310"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js?_v=20250819164259"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js?_v=20250819164259"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.2.0/jquery.magnific-popup.min.js?_v=20250819164259"></script>
 
     <title>Main</title>
 </head>
@@ -568,6 +568,22 @@
         </div>
     </div>
 </section>
+<script>
+$(document).ready(function() {
+    $('.service').hover(
+        function() {
+            var $body = $(this).find('.service__body');
+            if ($body[0].scrollHeight > $body[0].clientHeight) {
+                $body.stop().animate({ scrollTop: 30 }, 200)
+                      .animate({ scrollTop: 0 }, 300);
+            }
+        },
+        function() {
+            $(this).find('.service__body').stop().animate({ scrollTop: 0 }, 200);
+        }
+    );
+});
+</script>
             <section class="section section_bg-primary">
     <div class="section__container container">
         <div class="section__header">
@@ -708,7 +724,7 @@
                 </div>
                 <div class="step" style="--rotation: 270deg">
                     <p class="step__label">Step 3</p>
-                    <h3 class="step__title">Preparing for the Property Launch</h3>
+                    <h3 class="step__title">Getting Ready to Launch</h3>
                     <p class="step__text">We form teams, set up chat rooms, take stock and select staff. We also set up processes and the owner's personal account.</p>
                 </div>
                 <div class="step">
@@ -862,11 +878,12 @@
                     </div>
                 </div>
             </div>
-            <a href="" class="insight-section__all">Read all</a>
+            <a href="" class="insight-section__all insight-section__all_en">Read all</a>
             
         </div>
     </div>
 </section>
+
         </main>
         <footer class="footer">
     <div class="footer__container container">
@@ -973,6 +990,6 @@
     </div>
 </footer>
 
-        <script src="js/app.min.js?_v=20250819152310"></script>
+        <script src="js/app.min.js?_v=20250819164259"></script>
     </body>
 </html>

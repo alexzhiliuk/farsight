@@ -20,6 +20,12 @@
         width: clamp(10px, 4vw, 19px);
     }
 
+    &:hover {
+        box-shadow: 0 0 10px 3px rgba(9, 129, 123, 0.3); 
+        filter: brightness(1.05); 
+        -webkit-filter: brightness(1.05); 
+    }
+
     &_white {
         background: $colorWhite;
         color: #212121;

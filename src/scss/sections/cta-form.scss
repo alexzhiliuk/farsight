@@ -111,7 +111,7 @@
     }
 
     &__subtitle {
-        margin-top: 20px;
+        margin-top: 15px;
         color: $colorWhite;
         font-size: 18px;
         font-style: normal;
@@ -129,7 +129,7 @@
 
         @media screen and (max-width: $breakpoint992) {
             flex: unset;
-            padding: 0;
+            padding: 8px;
         }
     }
 

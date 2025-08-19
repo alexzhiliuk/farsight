@@ -65,8 +65,16 @@ button {
     overflow-x: hidden;
 }
 
+
+
+$sectionPadding: clamp(56px, 10vw, 95px);
+
+.mt-section {
+    margin-top: $sectionPadding;
+}
+
 .section {
-    padding: clamp(40px, 10vw, 95px) 0;
+    padding: $sectionPadding 0;
 
     &_bg-primary {
         background: $colorPrimary;
@@ -123,10 +131,15 @@ button {
 
     &__title {
         color: $colorPrimary;
-        font-size: 35px;
+        font-size: clamp(28px, 3.5vw, 35px);
         font-style: normal;
         font-weight: 700;
         line-height: 120%; /* 42px */
+
+        &.title-en {
+            font-family: $fontTitleEn;
+            @include clamp(font-size, 30, 44);
+        }
     }
 
     &__subtitle {
@@ -140,9 +153,10 @@ button {
 
     &__point {
         color: #324A54;
-        font-size: clamp(16px, 3vw, 25px);
+        font-family: $fontTitle;
+        font-size: 15px;
         font-style: normal;
-        font-weight: 700;
+        font-weight: 400;
         line-height: 110%; /* 27.5px */
         letter-spacing: 0.45px;
         text-transform: uppercase;
@@ -151,12 +165,22 @@ button {
         align-items: center;
         gap: 12px;
 
+        &_en {
+            font-family: $fontTitleEn;
+            font-size: 16px;
+
+            &::before {
+                top: -0.1em;
+            }
+        }
+
         &::before {
             content: '';
             height: 12px;
             width: 12px;
             background: #4D9D9B;
             display: block;
+            position: relative;
         }
     }
 

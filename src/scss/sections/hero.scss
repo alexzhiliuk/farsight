@@ -2,7 +2,7 @@
     position: relative;
     overflow: hidden;
     padding-top: 100px;
-    padding-bottom: 72px;
+    padding-bottom: 80px;
 
     & > * {
         z-index: 2;
@@ -24,16 +24,20 @@
 
     // .hero_big
     &_big {
-        padding-top: clamp(70px, 30vw, 315px);
+        padding-top: clamp(40px, 23vw, 232px);
 
         .hero__title {
             @include clamp(margin-top, 24, 28);
-            @include clamp(font-size, 35, 70);
+            @include clamp(font-size, 35, 64);
+        }
+
+        @media screen and (max-width: $breakpoint576) {
+            padding-bottom: 0;
         }
 
         .hero__img {
             @media screen and (max-width: $breakpoint576) {
-                bottom: 30%;
+                bottom: 40%;
             }
         }
 
@@ -42,7 +46,7 @@
                 background: linear-gradient(180deg, rgba(19, 47, 59, 0.00) 0%, rgba(19, 47, 59, 0.55) 42.31%, #132F3B 86.06%);
             }
             @media screen and (max-width: $breakpoint576) {
-                bottom: 30%;
+                bottom: 40%;
             }
         }
     }
@@ -80,7 +84,6 @@
     // .hero__title
     &__title {
         color: $colorWhite;
-        font-family: $fontTitle;
         font-size: clamp(35px, 7vw, 64px);
         font-style: normal;
         font-weight: 700;
@@ -102,7 +105,7 @@
 
     // .hero__items
     &__items {
-        @include clamp(margin-top, 16, 28);
+        @include clamp(margin-top, 16, 30);
         color: $colorWhite;
         @include clamp(font-size, 18, 30);
         font-style: normal;
@@ -190,13 +193,14 @@
 
 .hero-form {
 
-    @include clamp(margin-top, 36, 66);
+    @include clamp(margin-top, 36, 54);
 
     border-radius: 12px;
     background: $colorWhite;
     padding: clamp(24px, 4vw, 40px);
 
     display: flex;
+    justify-content: space-between;
     gap: clamp(16px, 6vw, 60px);
 
     @media screen and (max-width: $breakpoint992) {
@@ -205,7 +209,7 @@
 
     // .hero-form__left
     &__left {
-        flex: 0 1 487px;
+        flex: 0 1 437px;
 
         @media screen and (max-width: $breakpoint992) {
             flex: unset;
@@ -216,7 +220,7 @@
     &__title {
         color: $colorPrimary;
         font-size: 28px;
-        @include clamp(font-size, 16, 28);
+        @include clamp(font-size, 16, 25);
         font-style: normal;
         font-weight: 600;
         line-height: 120%; /* 33.6px */
@@ -225,7 +229,7 @@
 
     // .hero-form__subtitle
     &__subtitle {
-        margin-top: 10px;
+        margin-top: 15px;
         color: $colorPrimary;
         @include clamp(font-size, 9, 16);
         font-style: normal;
@@ -235,6 +239,11 @@
 
     // .hero-form__right
     &__right {
+        flex: 0 1 720px;
+
+        @media screen and (max-width: $breakpoint992) {
+            flex: unset;
+        }
     }
 
     // .hero-form__fields

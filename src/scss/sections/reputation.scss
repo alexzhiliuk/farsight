@@ -17,6 +17,10 @@
                 flex: unset;
             }
         }
+
+        &__body {
+            margin-top: $sectionPadding;
+        }
     }
 
     .brands {
@@ -38,8 +42,7 @@
             align-items: center;
             justify-content: center;
             img {
-                max-height: 80%;
-                max-width: 80%;
+                max-height: clamp(68px, 11vw, 110px);
                 object-fit: contain;
                 width: 100%;
                 height: 100%;

@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicons -->
+     
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&display=swap&_v=20250819152310" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.min.css?_v=20250819152310">
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css?_v=20250819152310"
+    />
+
+    <!-- JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js?_v=20250819152310"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js?_v=20250819152310"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.2.0/jquery.magnific-popup.min.js?_v=20250819152310"></script>
+
+    <title>Main</title>
+</head>
+    <body>
+        
+        <section class="popup" data-popup="2" style="display: none;">
+    <form class="popup__inner">
+        <div class="popup__close">
+            <img src="img/popup/close.svg" alt="">
+        </div>
+        <h2 class="popup__title">Find out how much your property could bring in!</h2>
+        <p class="popup__subtitle">Provide your contact details and we will get in touch to calculate your potential return on investment.</p>
+        <div class="popup__inputs">
+            <input class="popup__input input" type="text" placeholder="Your Name" required>
+            <input class="popup__input input" type="tel" data-tel-input placeholder="+7(__)___-__-__" required>
+            <label class="popup__confirm">
+                <input type="checkbox" class="checkbox">
+                <p>I consent to my personal data being processed.</p>
+            </label>
+        </div>
+        <button type="submit" class="btn popup__btn">Submit an application</button>
+    </form>
+</section>
+        <header class="header header_filled">
+    <div class="header__container container">
+        <a href="index.html" class="header__logo">
+            <img src="img/base/logo.png" alt="" class="_white">
+            <img src="img/base/logo-black.png" alt="" class="_black">
+        </a>
+        <nav class="header__nav">
+            <ul class="header__menu">
+                <li>
+                    <a href="about.html">About Us</a>
+                </li>
+                <li>
+                    <a href="index.html">Management</a>
+                </li>
+                <li>
+                    <a href="projects.html">Investment</a>
+                </li>
+                <li>
+                    <a href="projects.html">For Partners</a>
+                </li>
+                <li>
+                    <a href="blog.html">Blog</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="header__lang header-dropdown">
+            <div class="header-dropdown__value">EN</div>
+            <ul class="header-dropdown__list">
+                <li><a href="index.html">RU</a></li>
+            </ul>
+        </div>
+        <div class="header__socials">
+            <a href=""><img src="img/socials/WhatsApp.svg" alt=""></a>
+        </div>
+        <div class="header__burger">
+            <img src="img/burger/open.svg" alt="" class="_white">
+            <img src="img/burger/open-black.svg" alt="" class="_black">
+        </div>
+    </div>
+</header>
+
+<div class="mobile-menu">
+    <div class="container mobile-menu__container">
+        <div class="mobile-menu__header">
+            <a href="index.html" class="mobile-menu__logo">
+                <img src="img/base/logo.png" alt="">
+            </a>
+            <div class="mobile-menu__close">
+                <img src="img/burger/close.svg" alt="">
+            </div>
+        </div>
+        <ul class="mobile-menu__list">
+        </ul>
+        <a href="" class="mobile-menu__btn">Book a villa</a>
+        <div class="mobile-menu__socials">
+            <a href=""><img src="img/socials/inst.png" alt=""></a>
+            <a href=""><img src="img/socials/fb.png" alt=""></a>
+            <a href=""><img src="img/socials/yt.png" alt=""></a>
+            <a href=""><img src="img/socials/in.png" alt=""></a>
+        </div>
+    </div>
+</div>
+        <main>            
+            <section class="hero hero_margin hero_big" >
+    <div class="hero__img">
+        <img src="img/hero/bg.png" alt="">
+    </div>
+    <div class="hero__gradient"></div>
+    <div class="hero__container container">
+        <div class="hero-reviews">
+            <div class="hero-reviews__avatars">
+                <div class="hero-reviews__avatar">
+                    <img src="img/hero/avatar1.png" alt="">
+                </div>
+                <div class="hero-reviews__avatar">
+                    <img src="img/hero/avatar2.png" alt="">
+                </div>
+            </div>
+            <div class="hero-reviews__rate">
+                <span>4.8/5 </span> <span class="hero-reviews__stars">★★★★☆</span>
+            </div>
+            <p class="hero-reviews__text">based on over 200 property owners' reviews</p>
+        </div>
+        <h1 class="hero__title title-en">Transparent Villa Management in Bali </h1>
+        <div class="hero__items">
+                300+ objects <span>•</span>Open reporting <span>•</span>No hidden fees
+        </div>
+        <form action="" class="hero-form">
+            <div class="hero-form__left">
+                <h2 class="hero-form__title">Let's calculate how much you can earn</h2>
+                <p class="hero-form__subtitle">Complete the form below to receive a profitability analysis from the Farsight Villas & Hotels</p>
+            </div>
+            <div class="hero-form__right">
+                <div class="hero-form__fields">
+                    <input type="text" class="input" placeholder="Your Name">
+                    <input type="email" class="input" placeholder="E-Mail">
+                    <input type="tel" class="input" data-tel-input placeholder="+7(__)___-__-__">
+                    <input type="text" class="input" placeholder="Your Property Address">
+                </div>
+                <button type="submit" class="hero-form__submit btn">
+                    Calculate Profitability
+                    <svg width="19" height="19">
+                        <use href="img/button/button-sprite.svg#arrow"></use>
+                    </svg>
+                </button>
+                <label class="hero-form__confirm">
+                    <input type="checkbox" class="checkbox">
+                    <p>
+                        I consent to my personal data being processed
+                    </p>
+                </label>
+            </div>
+        </form>
+    </div>
+</section>
+            <section class="section">
+    <div class="section__container container">
+        <div class="section__header">
+            <h2 class="section__title">When should management <br>be transferred?</h2>
+        </div>
+        <div class="section__body">
+            <div class="reasons">
+                <div class="reason">
+                    <div class="reason__col">Expectation ≠ Reality</div>
+                    <h3 class="reason__col">Your expectations do not correspond to market reality</h3>
+                    <p class="reason__col">You were promised an annual return of 20%, but ended up with just 5–8%. We can explain the current market situation and show you how to maximise your returns without making unrealistic promises.</p>
+                </div>
+                <div class="reason" style="--rotation: 90deg">
+                    <div class="reason__col">Hidden Costs</div>
+                    <h3 class="reason__col">Although you are promised low fees, the actual costs are hidden</h3>
+                    <p class="reason__col">Other management companies offer a 15% fee, but with 'additional services', this can increase to 25-30%. We provide a full breakdown of the management costs up front, with no surprises or additional fees.</p>
+                </div>
+                <div class="reason" style="--rotation: 180deg">
+                    <div class="reason__col">Micromanagement</div>
+                    <h3 class="reason__col">You're fed up with having to change contractors all the time and solve minor issues</h3>
+                    <p class="reason__col">Every simple conflict, whether it's an issue with the cleaning service or an unanswered guest, costs you both nerves and income. We build stable systems with teams and regulations.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+            <section class="section section_bg-primary mertics-section">
+    <div class="section__container container">
+        <div class="section__header">
+            <h2 class="section__title title-en">Farsight Villas & <br>Hotel Management</h2>
+            <blockquote class="section-quote">
+                <p class="section-quote__text">We know that time is your most valuable resource. Our job is to free it up for you.</p>
+                <div class="section-quote__author">
+                    <div class="section-quote__avatar">
+                        <img src="img/blockquote/avatar.png" alt="">
+                    </div>
+                    <div class="section-quote__author-info">
+                        <p class="section-quote__author-name">Victor Plotnikov</p>
+                        <p class="section-quote__author-position">The CEO of the <br>Farsight Villas & Hotels Management company</p>
+                    </div>
+                </div>
+            </blockquote>
+            
+        </div>
+        <div class="section__body">
+            <div class="metrics">
+                <div class="metric">
+                    <div class="metric__header">
+                        <div class="metric__tag">Management</div>
+                        <hr class="metric__hr">
+                    </div>
+                    <div class="metric__body">
+                        <div class="metric__row">
+                            <div class="metric__num">300+</div>
+                            <div class="metric__title">property objects</div>
+                        </div>
+                        <p class="metric__text">We manage more than 300 properties using dynamic pricing algorithms</p>
+                    </div>
+                </div>
+                <div class="metric">
+                    <div class="metric__header">
+                        <div class="metric__tag">Global Network</div>
+                        <hr class="metric__hr">
+                    </div>
+                    <div class="metric__body">
+                        <div class="metric__row">
+                            <div class="metric__num">1000+</div>
+                            <div class="metric__title">partners</div>
+                        </div>
+                        <p class="metric__text">We connect your property to 50 OTAs and over 1,000 travel agencies, increasing your revenue by 10–15%</p>
+                    </div>
+                </div>
+                <div class="metric">
+                    <div class="metric__header">
+                        <div class="metric__tag">Team</div>
+                        <hr class="metric__hr">
+                    </div>
+                    <div class="metric__body">
+                        <div class="metric__row">
+                            <div class="metric__num">407+</div>
+                            <div class="metric__title">experts in the team</div>
+                        </div>
+                        <p class="metric__text">Thanks to the coordinated interaction of specialists, we take a comprehensive approach to each project</p>
+                    </div>
+                </div>
+                <div class="metric">
+                    <div class="metric__header">
+                        <div class="metric__tag">Financial Monitoring</div>
+                        <hr class="metric__hr">
+                    </div>
+                    <div class="metric__body">
+                        <div class="metric__row">
+                            <div class="metric__num">100%</div>
+                            <div class="metric__title">Report Transparency</div>
+                        </div>
+                        <p class="metric__text">Monitor your income, bookings and guest occupancy 24/7 via your personal account</p>
+                    </div>
+                </div>
+                <div class="metric">
+                    <div class="metric__header">
+                        <div class="metric__tag">Marketing</div>
+                        <hr class="metric__hr">
+                    </div>
+                    <div class="metric__body">
+                        <div class="metric__row">
+                            <div class="metric__num">+15%</div>
+                            <div class="metric__title">increase in revenue from bookings</div>
+                        </div>
+                        <p class="metric__text">We reduce OTA fees by 15%, allowing your profits to grow thanks to our direct sales and marketing strategies</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+            <section class="section">
+    <div class="section__container container">
+        <div class="section__header section__header_1-2">
+            <p class="section__point section__point_en">Our Work Approach</p>
+            <h2 class="section__title">We turn your property into a stable income stream — without your involvement</h2>
+        </div>
+        <div class="section__body">
+            <div class="methods">
+                <div class="method-item">
+                    <h3 class="method-item__title"> Market Analysis and Financial Modelling</h3>
+                    <p class="method-item__text">We assess your property's potential and use data to calculate future profits, so you know exactly what to expect.</p>
+                </div>
+                <div class="method-item">
+                    <h3 class="method-item__title">Engaging the Marketing Team</h3>
+                    <p class="method-item__text">We create content, optimise advertisements and promote your property on social media and through the agency network. We do everything to make your property stand out</p>
+                </div>
+                <div class="method-item">
+                    <h3 class="method-item__title">Client-oriented Management</h3>
+                    <p class="method-item__text">We listen to our guests and respond quickly to their requests. Our strong team is capable of fulfilling non-standard requests</p>
+                </div>
+                <div class="method-item">
+                    <h3 class="method-item__title">24/7 Support for Guests and Ownersе</h3>
+                    <p class="method-item__text">We process bookings and provide assistance to guests seven days a week. Our support team is always available, even at night</p>
+                </div>
+                <div class="method-item">
+                    <h3 class="method-item__title"> Impeccable Service and Villa Maintenance</h3>
+                    <p class="method-item__text">Boutique hotel-style service, focusing on cleanliness, comfort and attention to detail. Staff are available day and night for emergency situations</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+            <section class="section">
+    <div class="section__container container">
+        <div class="section__header section__header_1-2">
+            <p class="section__point section__point_en">cases</p>
+            <h2 class="section__title">The Potential Income From Your Property, Based on Our Projects</h2>
+        </div>
+        <div class="section__body">
+            <div class="cases">
+                <div class="cases-swiper swiper" id="casesSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="case-slide">
+                                <div class="case-slide__header">
+                                    <div>
+                                        <h3 class="case-slide__title">Villa Martini / +58% increase in revenue for 6 months</h3>
+                                        <p class="case-slide__subtitle">Modern villa in Seminyak</p>
+                                    </div>
+                                    <a href="" class="case-slide__more">Explore more cases</a>
+                                </div>
+                                <div class="case-slide__body">
+                                    <div class="case-slide__table">
+                                        <div class="case-slide__thead">
+                                            <div class="case-slide__th">Metric Name</div>
+                                            <div class="case-slide__th">Before</div>
+                                            <div class="case-slide__th">After</div>
+                                        </div>
+                                        <div class="case-slide__tbody">
+                                            <div class="case-slide__tr">
+                                                <div class="case-slide__td">Owner's Annual Income</div>
+                                                <div class="case-slide__td">$49 200</div>
+                                                <div class="case-slide__td">$78 000</div>
+                                            </div>
+                                            <div class="case-slide__tr">
+                                                <div class="case-slide__td">Guests Occupancy</div>
+                                                <div class="case-slide__td">45%</div>
+                                                <div class="case-slide__td">73%</div>
+                                            </div>
+                                            <div class="case-slide__tr">
+                                                <div class="case-slide__td">Cost Per Night</div>
+                                                <div class="case-slide__td">$272</div>
+                                                <div class="case-slide__td">$305</div>
+                                            </div>
+                                            <div class="case-slide__tr">
+                                                <div class="case-slide__td">Rating (Reviews)</div>
+                                                <div class="case-slide__td"><div class="_rate"><span class="_star">★</span>4.1</div></div>
+                                                <div class="case-slide__td"><div class="_rate"><span class="_star">★</span>4.8</div></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="case-slide__image">
+                                        <img src="img/cases/image.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="case-slide">
+                                <div class="case-slide__header">
+                                    <div>
+                                        <h3 class="case-slide__title">Villa 7 Rooms / +26% increase in revenue for 6 months</h3>
+                                        <p class="case-slide__subtitle">Modern villa in Seminyak</p>
+                                    </div>
+                                    <a href="" class="case-slide__more">Explore more cases</a>
+                                </div>
+                                <div class="case-slide__body">
+                                    <div class="case-slide__table">
+                                        <div class="case-slide__thead">
+                                            <div class="case-slide__th">Metric Name</div>
+                                            <div class="case-slide__th">Before</div>
+                                            <div class="case-slide__th">After</div>
+                                        </div>
+                                        <div class="case-slide__tbody">
+                                            <div class="case-slide__tr">
+                                                <div class="case-slide__td">Owner's Annual Income</div>
+                                                <div class="case-slide__td">$85 000</div>
+                                                <div class="case-slide__td">$107 000</div>
+                                            </div>
+                                            <div class="case-slide__tr">
+                                                <div class="case-slide__td">Guests Occupancy</div>
+                                                <div class="case-slide__td">70%</div>
+                                                <div class="case-slide__td">81%</div>
+                                            </div>
+                                            <div class="case-slide__tr">
+                                                <div class="case-slide__td">Cost Per Night</div>
+                                                <div class="case-slide__td">$310</div>
+                                                <div class="case-slide__td">$385</div>
+                                            </div>
+                                            <div class="case-slide__tr">
+                                                <div class="case-slide__td">Rating (Reviews)</div>
+                                                <div class="case-slide__td"><div class="_rate"><span class="_star">★</span>4.6</div></div>
+                                                <div class="case-slide__td"><div class="_rate"><span class="_star">★</span>4.8</div></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="case-slide__image">
+                                        <img src="img/cases/image.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="case-slide">
+                                <div class="case-slide__header">
+                                    <div>
+                                        <h3 class="case-slide__title">Villa 7 Rooms / +26% increase in revenue for 6 months</h3>
+                                        <p class="case-slide__subtitle">Modern villa in Seminyak</p>
+                                    </div>
+                                    <a href="" class="case-slide__more">Explore more cases</a>
+                                </div>
+                                <div class="case-slide__body">
+                                    <div class="case-slide__table">
+                                        <div class="case-slide__thead">
+                                            <div class="case-slide__th">Metric Name</div>
+                                            <div class="case-slide__th">Before</div>
+                                            <div class="case-slide__th">After</div>
+                                        </div>
+                                        <div class="case-slide__tbody">
+                                            <div class="case-slide__tr">
+                                                <div class="case-slide__td">Owner's Annual Income</div>
+                                                <div class="case-slide__td">$85 000</div>
+                                                <div class="case-slide__td">$107 000</div>
+                                            </div>
+                                            <div class="case-slide__tr">
+                                                <div class="case-slide__td">Guests Occupancy</div>
+                                                <div class="case-slide__td">70%</div>
+                                                <div class="case-slide__td">81%</div>
+                                            </div>
+                                            <div class="case-slide__tr">
+                                                <div class="case-slide__td">Cost Per Night</div>
+                                                <div class="case-slide__td">$310</div>
+                                                <div class="case-slide__td">$385</div>
+                                            </div>
+                                            <div class="case-slide__tr">
+                                                <div class="case-slide__td">Rating (Reviews)</div>
+                                                <div class="case-slide__td"><div class="_rate"><span class="_star">★</span>4.6</div></div>
+                                                <div class="case-slide__td"><div class="_rate"><span class="_star">★</span>4.8</div></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="case-slide__image">
+                                        <img src="img/cases/image.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cases-swiper__footer">
+                        <div class="swiper-counter" id="casesSwiperCounter"></div>
+                        <div class="swiper-progress" id="casesSwiperProgress"></div>
+                        <div class="swiper-navigation">
+                            <button class="swiper-navigation-prev" id="casesSwiperPrev"><img src="img/cases/arrow.svg" alt=""></button>
+                            <button class="swiper-navigation-next" id="casesSwiperNext"><img src="img/cases/arrow.svg" alt=""></button>
+                        </div>
+                    </div>
+                    <a href="" class="cases-swiper__btn btn">
+                        Calculate your property return
+                        <svg width="19" height="19">
+                            <use href="img/button/button-sprite.svg#arrow"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+            <section class="section section_bg-primary services-section">
+    <div class="section__container container">
+        <div class="section__header">
+            <p class="section__point section__point_en">Our Services</p>
+            <div>
+                <h2 class="section__title">Management Options</h2>
+                <p class="section__subtitle">
+                    We offer two options: full management or marketing management. <br> You remain the owner and we take care of all operational tasks, including welcoming guests and receiving reports. Transparent processes, an on-site team and measurable results. 
+                </p>
+            </div>
+            <div class="services-section__img">
+                <img src="img/services/image.png" alt="">
+            </div>
+        </div>
+        <div class="section__body">
+            <div class="services">
+                <blockquote class="section-quote">
+                    <p class="section-quote__text">We manage your property so that you can relax, safe in the knowledge that everything is under control.</p>
+                    <div class="section-quote__author">
+                        <div class="section-quote__avatar">
+                            <img src="img/blockquote/avatar.png" alt="">
+                        </div>
+                        <div class="section-quote__author-info">
+                            <p class="section-quote__author-name">Victor Plotnikov</p>
+                            <p class="section-quote__author-position">The CEO of the <br> Farsight Villas & Hotels Management company</p>
+                        </div>
+                    </div>
+                </blockquote>
+                <div class="service">
+                    <div class="service__header">
+                        <h3 class="service__title">Full Management</h3>
+                        <p class="service__subtitle">We take care of everything, from welcoming guests to carrying out repairs and providing full reports.</p>
+                        <a href="javascript:void(0)" class="service__btn btn btn_white js-open-popup" data-popup="2">Submit an application</a>
+                    </div>
+                    <div class="service__body">
+                        <div class="service__item">
+                            <div class="service__list-title">Marketing</div>
+                            <ul class="service__list">
+                                <li>Marketing strategy</li>
+                                <li>Professional photography and videography of real estate property</li>
+                                <li>Listing optimisation in catalogues and on OTA platforms</li>
+                                <li>Property promotion using digital marketing</li>
+                                <li>Global placement of properties on over 25 booking platforms</li>
+                            </ul>
+                        </div>
+                        <div class="service__item">
+                            <div class="service__list-title">Management</div>
+                            <ul class="service__list">
+                                <li>Personal account with online reports and property monitoring</li>
+                                <li>Administrative support for owners</li>
+                                <li>Constant competitor and market research</li>
+                                <li>Channel manager setup</li>
+                                <li>Utility and bill management</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="service service_gray">
+                    <div class="service__header">
+                        <h3 class="service__title">Marketing Management</h3>
+                        <p class="service__subtitle">We promote your property, increase its visibility and boost guest occupancy</p>
+                        <a href="javascript:void(0)" class="service__btn btn btn_white btn_outline js-open-popup" data-popup="2">Submit an application</a>
+                    </div>
+                    <div class="service__body">
+                        <div class="service__item">
+                            <div class="service__list-title">Marketing</div>
+                            <ul class="service__list">
+                                <li class="_gray">Marketing strategy</li>
+                                <li class="_gray">Professional photography and videography of real estate property</li>
+                                <li class="_gray">Listing optimisation in catalogues and on OTA platforms</li>
+                                <li class="_gray">Property promotion using digital marketing</li>
+                                <li class="_gray">Global placement of properties on over 25 booking platforms</li>
+                            </ul>
+                        </div>
+                        <div class="service__item">
+                            <div class="service__list-title">Управление</div>
+                            <ul class="service__list">
+                                <li class="_gray">Personal account with online reports and property monitoring</li>
+                                <li class="_gray">Administrative support for owners</li>
+                                <li class="_gray">Constant competitor and market research</li>
+                                <li class="_disabled">Channel manager setup</li>
+                                <li class="_disabled">Utility and bill management</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="services-section__footer-image">
+                <img src="img/services/footer-image.png" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+            <section class="section section_bg-primary">
+    <div class="section__container container">
+        <div class="section__header">
+            <h2 class="section__title">Monitor profitability <br> and occupancy in real time</h2>
+        </div>
+        <div class="section__body">
+            <div class="track swiper" id="trackSwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="track-item">
+                            <div class="track-item__icon">
+                                <img src="img/track/icon1.svg" alt="">
+                            </div>
+                            <h3 class="track-item__title">Transparent Reporting</h3>
+                            <p class="track-item__text">Detailed invoices allow you to control all charges</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="track-item">
+                            <div class="track-item__icon">
+                                <img src="img/track/icon2.svg" alt="">
+                            </div>
+                            <h3 class="track-item__title">Financial Analytics</h3>
+                            <p class="track-item__text">Monitor the profitability of the property</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="track-item">
+                            <div class="track-item__icon">
+                                <img src="img/track/icon3.svg" alt="">
+                            </div>
+                            <h3 class="track-item__title">Calendar</h3>
+                            <p class="track-item__text">View bookings for any custom period</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="track-item">
+                            <div class="track-item__icon">
+                                <img src="img/track/icon4.svg" alt="">
+                            </div>
+                            <h3 class="track-item__title">Client Chat</h3>
+                            <p class="track-item__text">Stay in touch with our management company directly</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="track__footer">
+                    <div class="swiper-counter" id="trackSwiperCounter"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+            <section class="section reputation-section">
+    <div class="section__container container">
+        <div class="section__header">
+            <h2 class="section__title">Our reputation is built on the trust of our clients</h2>
+            <div class="brands">
+                <div class="brands__item">
+                    <img src="img/reputation/brand1.png" alt="">
+                </div>
+                <div class="brands__item">
+                    <img src="img/reputation/brand2.png" alt="">
+                </div>
+                <div class="brands__item">
+                    <img src="img/reputation/brand3.png" alt="">
+                </div>
+                <div class="brands__item">
+                    <img src="img/reputation/brand4.png" alt="">
+                </div>
+                <div class="brands__item">
+                    <img src="img/reputation/brand5.png" alt="">
+                </div>
+                <div class="brands__item">
+                    <img src="img/reputation/brand6.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="section__body">
+            <div class="reputation-swiper swiper" id="repSwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="reputation-slide">
+                            <div class="reputation-slide__video">
+                                <iframe src="https://www.youtube.com/embed/kU48CSz74Js?si=7bZGHBoAg_CST_UJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <div class="reputation-slide__body">
+                                <h3 class="reputation-slide__title">Jutta, London Stock Exchange Group, villa owner in Bali</h3>
+                                <p class="reputation-slide__text">"It’s actually working really smoothly — I’m really happy with how everything is managed."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="reputation-slide">
+                            <div class="reputation-slide__video">
+
+                            </div>
+                            <div class="reputation-slide__body">
+                                <h3 class="reputation-slide__title">Jutta, London Stock Exchange Group, villa owner in Bali</h3>
+                                <p class="reputation-slide__text">"It’s actually working really smoothly — I’m really happy with how everything is managed."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="reputation-slide">
+                            <div class="reputation-slide__video">
+
+                            </div>
+                            <div class="reputation-slide__body">
+                                <h3 class="reputation-slide__title">Jutta, London Stock Exchange Group, villa owner in Bali</h3>
+                                <p class="reputation-slide__text">"It’s actually working really smoothly — I’m really happy with how everything is managed."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reputation-swiper__footer">
+                    <div class="swiper-counter" id="repSwiperCounter"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+            <section class="section steps-section">
+    <div class="section__container container">
+        <div class="section__header">
+            <h2 class="section__title">Just 4 steps separate you from a noticeable increase in your income</h2>
+        </div>
+        <div class="secttion__body">
+            <div class="steps">
+                <div class="step" style="--rotation: 90deg">
+                    <p class="step__label">Step 1</p>
+                    <h3 class="step__title">Analysis and Preparation</h3>
+                    <p class="step__text">We assess the property's potential, calculate its profitability, and determine your preferred cooperation format: full management or the marketing option only.</p>
+                </div>
+                <div class="step" style="--rotation: 180deg">
+                    <p class="step__label">Step 2</p>
+                    <h3 class="step__title">Contract Signing</h3>
+                    <p class="step__text">We sign contracts in a format that is convenient for you, whether that's paper or online. We collect all the necessary information about the property, including photos, and work with the current listings.</p>
+                </div>
+                <div class="step" style="--rotation: 270deg">
+                    <p class="step__label">Step 3</p>
+                    <h3 class="step__title">Preparing for the Property Launch</h3>
+                    <p class="step__text">We form teams, set up chat rooms, take stock and select staff. We also set up processes and the owner's personal account.</p>
+                </div>
+                <div class="step">
+                    <p class="step__label">Step 4</p>
+                    <h3 class="step__title">Start of Rental</h3>
+                    <p class="step__text">We launch the listings, receive the first bookings, and begin promotion. After the test period, we achieve stable income.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+            <section class="section section_bg-primary">
+    <div class="section__container container">
+        <div class="section__body">
+            <form action="" class="cta-form">
+                <div class="cta-form__left">
+                    <h2 class="cta-form__title">Still have questions?</h2>
+                    <p class="cta-form__subtitle">We'd be happy to answer them! Submit your request and our managers will get back to you.</p>
+                </div>
+                <div class="cta-form__right">
+                    <div class="cta-form__fields">
+                        <input type="text" class="input" placeholder="Your Name">
+                        <input type="tel" class="input" data-tel-input placeholder="+7(__)___-__-__">
+                        <input type="email" class="input" placeholder="E-Mail">
+                    </div>
+                    <button type="submit" class="cta-form__submit btn">
+                        Get a consultation
+                        <svg width="19" height="19">
+                            <use href="img/button/button-sprite.svg#arrow"></use>
+                        </svg>
+                    </button>
+                    <label class="cta-form__confirm">
+                        <input type="checkbox" class="checkbox checkbox_white">
+                        <p>
+                            I consent to my personal data being processed
+                        </p>
+                    </label>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+            <section class="section faq-section">
+    <div class="section__container container">
+        <div class="section__header">
+            <p class="section__point section__point_en">Questions and Answers</p>
+            <div>
+                <h2 class="section__title">Frequently Asked Questions</h2>
+                <div class="faq">
+                    <div class="faq-item">
+                        <div class="faq-item__header">
+                            What makes Farsight Villas & Hotels Management different from other management companies?
+                        </div>
+                        <div class="faq-item__body">
+                            <div class="faq-item__wrapper">
+                                <p>Each of our apartments has a different policy, so we invite you to check the information for each apartment or villa if four-legged friends are allowed.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-item__header">
+                            What does a typical villa transfer agreement entail?
+                        </div>
+                        <div class="faq-item__body">
+                            <div class="faq-item__wrapper">
+                                <p>Each of our apartments has a different policy, so we invite you to check the information for each apartment or villa if four-legged friends are allowed.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-item__header">
+                            How exactly will the Farsight Villas & Hotels Management team manage my property?
+                        </div>
+                        <div class="faq-item__body">
+                            <div class="faq-item__wrapper">
+                                <p>Each of our apartments has a different policy, so we invite you to check the information for each apartment or villa if four-legged friends are allowed.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-item__header">
+                            I would like to know how exactly the Farsight Villas & Hotels Management team will promote my property.
+                        </div>
+                        <div class="faq-item__body">
+                            <div class="faq-item__wrapper">
+                                <p>Each of our apartments has a different policy, so we invite you to check the information for each apartment or villa if four-legged friends are allowed.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+            <section class="section insight-section">
+    <div class="section__container container">
+        <div class="section__header section__header_1-2">
+            <p class="section__point section__point_en">Insights</p>
+            <h2 class="section__title">Insights worth sharing</h2>
+        </div>
+        <div class="section__body">
+            
+            <div class="insights-swiper swiper" id="insightsSwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a class="insight">
+                            <div class="insight__img">
+                                <img src="img/insights/insight.png" alt="">
+                            </div>
+                            <div class="insight__tag">Guest service</div>
+                            <div class="insight__header">
+                                <h3 class="insight__title">How to attract regular guests</h3>
+                                <div class="insight__date">Feb 8, 2025</div>
+                            </div>
+                            <p class="insight__text">To attract repeat guests, rather than those who arrive for the first time, it is necessary to understand your target audience and optimize your</p>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a class="insight">
+                            <div class="insight__img">
+                                <img src="img/insights/insight.png" alt="">
+                            </div>
+                            <div class="insight__tag">Guest service</div>
+                            <div class="insight__header">
+                                <h3 class="insight__title">How to attract regular guests</h3>
+                                <div class="insight__date">Feb 8, 2025</div>
+                            </div>
+                            <p class="insight__text">To attract repeat guests, rather than those who arrive for the first time, it is necessary to understand your target audience and optimize your</p>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a class="insight">
+                            <div class="insight__img">
+                                <img src="img/insights/insight.png" alt="">
+                            </div>
+                            <div class="insight__tag">Guest service</div>
+                            <div class="insight__header">
+                                <h3 class="insight__title">How to attract regular guests</h3>
+                                <div class="insight__date">Feb 8, 2025</div>
+                            </div>
+                            <p class="insight__text">To attract repeat guests, rather than those who arrive for the first time, it is necessary to understand your target audience and optimize your</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="insights-swiper__footer">
+                    <div class="swiper-counter" id="insightsSwiperCounter"></div>
+                    <div class="swiper-progress" id="insightsSwiperProgress"></div>
+                    <div class="swiper-navigation">
+                        <button class="swiper-navigation-prev" id="insightsSwiperPrev"><img src="img/cases/arrow.svg" alt=""></button>
+                        <button class="swiper-navigation-next" id="insightsSwiperNext"><img src="img/cases/arrow.svg" alt=""></button>
+                    </div>
+                </div>
+            </div>
+            <a href="" class="insight-section__all">Read all</a>
+            
+        </div>
+    </div>
+</section>
+        </main>
+        <footer class="footer">
+    <div class="footer__container container">
+        <div class="footer__top">
+            <div class="footer-swiper swiper" id="footerSwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <p>FARSIGHT MANAGEMENT</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p>FARSIGHT MANAGEMENT</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p>FARSIGHT MANAGEMENT</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p>FARSIGHT MANAGEMENT</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p>FARSIGHT MANAGEMENT</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p>FARSIGHT MANAGEMENT</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__body">
+            <div class="footer__col">
+                <a href="index.html" class="footer__logo">
+                    <img src="img/base/logo.png" alt="">
+                </a>
+                <div class="footer__socials">
+                    <a href=""><img src="img/socials/inst.png" alt=""></a>
+                    <a href=""><img src="img/socials/fb.png" alt=""></a>
+                    <a href=""><img src="img/socials/yt.png" alt=""></a>
+                    <a href=""><img src="img/socials/in.png" alt=""></a>
+                </div>
+                <nav class="footer__nav">
+                    <ul class="footer__menu">
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">Q&A</a></li>
+                        <li><a href="">Investment Projects</a></li>
+                        <li><a href="">Affiliate Programme</a></li>
+                        <li><a href="">Our Vacancies</a></li>
+                    </ul>
+                </nav>
+                <a href="" class="footer__btn btn btn_white btn_outline">Book a villa</a>
+            </div>
+            <div class="footer__col">
+                <div class="footer__office">
+                    <div class="footer__title">Office:</div>
+                    <p class="footer__text">Raya Uluwatu Printu Street, Printu District, Kuta Selatan District, Badung District, Bali 80361, Indonesia</p>
+                </div>
+                <div class="footer__connect">
+                    <div class="footer__title">Staying In Touch</div>
+                    <div class="footer__massengers">
+                        <a href="" class="footer__massenger">
+                            <img src="img/footer/tg.svg" alt="">
+                            Telegram
+                        </a>
+                        <a href="" class="footer__massenger">
+                            <img src="img/footer/wts.svg" alt="">
+                            WhatsApp
+                        </a>
+                        <a href="" class="footer__massenger">
+                            <img src="img/footer/email.svg" alt="">
+                            E-mail
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__socials">
+                    <a href=""><img src="img/socials/inst.png" alt=""></a>
+                    <a href=""><img src="img/socials/fb.png" alt=""></a>
+                    <a href=""><img src="img/socials/yt.png" alt=""></a>
+                    <a href=""><img src="img/socials/in.png" alt=""></a>
+                </div>
+            </div>
+            <div class="footer__col">
+                <div>
+                    <div class="footer__title">Discover additional information on the subject of property management</div>
+                    <p class="footer__text">Provide us with your email address and we will send you valuable materials and share new case studies with you.</p>
+                    <div class="footer__form">
+                        <div class="footer__field">
+                            <input type="email" placeholder="Enter Your Email">
+                            <button type="submit"><img src="img/footer/submit.svg" alt=""></button>
+                        </div>
+                        <label class="footer__confirm">
+                            <input type="checkbox" class="checkbox checkbox_gray">
+                            <p>By subscribing, you accept the <a href="">Privacy Policy</a> and the terms of the public offer.</p>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <small class="footer__copy">© PT Farsight Villas & Hotels Management Company, 2025</small>
+            <ul class="footer__politics">
+                <li><a href="">Privacy Policy</a></li>
+                <li><a href="">Cookie Policy</a></li>
+            </ul>
+        </div>
+
+    </div>
+</footer>
+
+        <script src="js/app.min.js?_v=20250819152310"></script>
+    </body>
+</html>

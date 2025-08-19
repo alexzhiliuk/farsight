@@ -31,6 +31,7 @@
 .track-item {
 
     padding: 15px;
+    padding-bottom: 30px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -73,6 +74,7 @@
 
     // .track-item__text
     &__text {
+        margin-top: 2px;
         color: #F2FAFF;
         font-size: clamp(16px, 2vw, 18px);
         font-style: normal;

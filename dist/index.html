@@ -11,20 +11,20 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&display=swap&_v=20250819164259" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&display=swap&_v=20250820170032" rel="stylesheet">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="css/style.min.css?_v=20250819164259">
+    <link rel="stylesheet" href="css/style.min.css?_v=20250820170032">
 
     <link
       rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css?_v=20250819164259"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css?_v=20250820170032"
     />
 
     <!-- JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js?_v=20250819164259"></script>
-    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js?_v=20250819164259"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.2.0/jquery.magnific-popup.min.js?_v=20250819164259"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js?_v=20250820170032"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js?_v=20250820170032"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.2.0/jquery.magnific-popup.min.js?_v=20250820170032"></script>
 
     <title>Главная</title>
 </head>
@@ -138,7 +138,7 @@
         <form action="" class="hero-form">
             <div class="hero-form__left">
                 <h2 class="hero-form__title">Давайте посчитаем, сколько вы можете зарабатывать</h2>
-                <p class="hero-form__subtitle">Заполните форму ниже — и получите расчёт доходности от управляющей компании Farsight Villas & Hotels</p>
+                <p class="hero-form__subtitle">Заполните форму ниже — и получите расчёт <br> доходности от управляющей компании Farsight <br> Villas & Hotels</p>
             </div>
             <div class="hero-form__right">
                 <div class="hero-form__fields">
@@ -147,18 +147,18 @@
                     <input type="tel" class="input" data-tel-input placeholder="+7(__)___-__-__">
                     <input type="text" class="input" placeholder="Введите адрес вашей недвижимости">
                 </div>
-                <button type="submit" class="hero-form__submit btn">
-                    Рассчитать доходность 
-                    <svg width="19" height="19">
-                        <use href="img/button/button-sprite.svg#arrow"></use>
-                    </svg>
-                </button>
                 <label class="hero-form__confirm">
                     <input type="checkbox" class="checkbox">
                     <p>
                         Я даю согласие на обработку моих персональных данных
                     </p>
                 </label>
+                <button type="submit" class="hero-form__submit btn">
+                    Рассчитать доходность 
+                    <svg width="19" height="19">
+                        <use href="img/button/button-sprite.svg#arrow"></use>
+                    </svg>
+                </button>
             </div>
         </form>
     </div>
@@ -258,7 +258,7 @@
                             <div class="metric__num">100%</div>
                             <div class="metric__title">прозрачность отчетов</div>
                         </div>
-                        <p class="metric__text">Следите за доходом, бронированиями, загрузкой в режиме 24/7 через личный кабинет</p>
+                        <p class="metric__text">Следите за доходом, бронированиями, <br> загрузкой в режиме 24/7 через личный <br> кабинет</p>
                     </div>
                 </div>
                 <div class="metric">
@@ -625,22 +625,28 @@ $(document).ready(function() {
             <h2 class="section__title">Наша репутация строится на доверии наших клиентов</h2>
             <div class="brands">
                 <div class="brands__item">
-                    <img src="img/reputation/brand1.png" alt="">
+                    <img class="brands__logo" src="img/reputation/brand1.png" alt="">
+                    <img class="brands__hover" src="img/reputation/hover.png" alt="">
                 </div>
                 <div class="brands__item">
-                    <img src="img/reputation/brand2.png" alt="">
+                    <img class="brands__logo" src="img/reputation/brand2.png" alt="">
+                    <img class="brands__hover" src="img/reputation/hover.png" alt="">
                 </div>
                 <div class="brands__item">
-                    <img src="img/reputation/brand3.png" alt="">
+                    <img class="brands__logo" src="img/reputation/brand3.png" alt="">
+                    <img class="brands__hover" src="img/reputation/hover.png" alt="">
                 </div>
                 <div class="brands__item">
-                    <img src="img/reputation/brand4.png" alt="">
+                    <img class="brands__logo" src="img/reputation/brand4.png" alt="">
+                    <img class="brands__hover" src="img/reputation/hover.png" alt="">
                 </div>
                 <div class="brands__item">
-                    <img src="img/reputation/brand5.png" alt="">
+                    <img class="brands__logo" src="img/reputation/brand5.png" alt="">
+                    <img class="brands__hover" src="img/reputation/hover.png" alt="">
                 </div>
                 <div class="brands__item">
-                    <img src="img/reputation/brand6.png" alt="">
+                    <img class="brands__logo" src="img/reputation/brand6.png" alt="">
+                    <img class="brands__hover" src="img/reputation/hover.png" alt="">
                 </div>
             </div>
         </div>
@@ -698,12 +704,12 @@ $(document).ready(function() {
                 <div class="step" style="--rotation: 90deg">
                     <p class="step__label">шаг 1</p>
                     <h3 class="step__title">Анализ и подготовка</h3>
-                    <p class="step__text">Оцениваем потенциал объекта, рассчитываем доходность и определяем формат сотрудничества — полное управление или только маркетинг</p>
+                    <p class="step__text">Оцениваем потенциал объекта, рассчитываем доходность и определяем формат сотрудничества — полное управление или только маркетинг</p>
                 </div>
                 <div class="step" style="--rotation: 180deg">
                     <p class="step__label">шаг 2</p>
                     <h3 class="step__title">Подписание договора</h3>
-                    <p class="step__text">Подписываем договор в удобном для вас формате (бумажном или онлайн). Собираем всю информацию об объекте, включая фото, и берём текущие объявления в работу</p>
+                    <p class="step__text">Подписываем договор в удобном для вас формате (бумажном или онлайн). Собираем всю информацию об объекте, включая фото, берём объявления в работу</p>
                 </div>
                 <div class="step" style="--rotation: 270deg">
                     <p class="step__label">шаг 3</p>
@@ -733,18 +739,18 @@ $(document).ready(function() {
                         <input type="tel" class="input" data-tel-input placeholder="+7(__)___-__-__">
                         <input type="email" class="input" placeholder="Ваш e-mail">
                     </div>
-                    <button type="submit" class="cta-form__submit btn">
-                        Получить консультацию
-                        <svg width="19" height="19">
-                            <use href="img/button/button-sprite.svg#arrow"></use>
-                        </svg>
-                    </button>
                     <label class="cta-form__confirm">
                         <input type="checkbox" class="checkbox checkbox_white">
                         <p>
                             Я даю согласие на обработку моих персональных данных
                         </p>
                     </label>
+                    <button type="submit" class="cta-form__submit btn">
+                        Получить консультацию
+                        <svg width="19" height="19">
+                            <use href="img/button/button-sprite.svg#arrow"></use>
+                        </svg>
+                    </button>
                 </div>
             </form>
         </div>
@@ -974,6 +980,6 @@ $(document).ready(function() {
     </div>
 </footer>
 
-        <script src="js/app.min.js?_v=20250819164259"></script>
+        <script src="js/app.min.js?_v=20250820170032"></script>
     </body>
 </html>

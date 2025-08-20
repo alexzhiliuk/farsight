@@ -63,6 +63,10 @@
             display: block;
         }
     }
+
+    .section-quote__text {
+        max-width: 382px;
+    }
 }
 
 .services {
@@ -114,7 +118,7 @@
     // .service__subtitle
     &__subtitle {
         margin-top: 15px;
-        height: 3lh;
+        min-height: 3lh;
         color: #CBD5E1;
         font-size: 18px;
         font-style: normal;
@@ -141,6 +145,11 @@
 
         padding-right: 15px;
         position: relative;
+
+        @media screen and (max-width: $breakpoint768) {
+            height: unset;
+            max-height: 772px;
+        }
 
         // scrollbar-width: thin;
         // scrollbar-color: #E3F0FF #283F58;
@@ -196,17 +205,17 @@
                 width: 20px;
                 height: 20px;
                 display: block;
-                background: url(../../img/services/icon-color.svg) center / contain no-repeat;
+                background: url(../img/services/icon-color.svg) center / contain no-repeat;
             }
 
             &._gray {
                 &::before {
-                    background: url(../../img/services/icon-gray.svg) center / contain no-repeat;
+                    background: url(../img/services/icon-gray.svg) center / contain no-repeat;
                 }
             }
             &._disabled {
                 &::before {
-                    background: url(../../img/services/icon-disabled.svg) center / contain no-repeat;
+                    background: url(../img/services/icon-disabled.svg) center / contain no-repeat;
                 }
             }
         }

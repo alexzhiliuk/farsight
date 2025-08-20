@@ -41,12 +41,28 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            img {
-                max-height: clamp(68px, 11vw, 110px);
-                object-fit: contain;
-                width: 100%;
-                height: 100%;
+
+            position: relative;
+            overflow: hidden;
+            &:hover {
+                .brands__hover {
+                    opacity: 1;
+                }
             }
+        }
+
+        &__logo {
+            max-height: clamp(68px, 11vw, 110px);
+            object-fit: contain;
+            width: 100%;
+            height: 100%;
+        }
+
+
+        &__hover {
+            opacity: 0;
+            position: absolute;
+            inset: 0;
         }
     }
 }

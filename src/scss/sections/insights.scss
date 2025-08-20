@@ -15,10 +15,10 @@
     // .insight-section__all
     &__all {
         @extend .section__point;
+        font-family: $fontPrimary;
         
         &_en {
-            @extend .section__point_en;
-            text-transform: none !important;
+            font-family: $fontPrimary;
         }
 
         text-transform: none;

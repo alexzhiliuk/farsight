@@ -480,11 +480,11 @@ button {
   align-items: center;
   gap: 12px;
 }
-.section__point_en, .insight-section__all_en {
+.section__point_en {
   font-family: "Bebas Neue", sans-serif;
   font-size: 16px;
 }
-.section__point_en::before, .insight-section__all_en::before {
+.section__point_en::before {
   top: -0.1em;
 }
 .section__point::before, .insight-section__all::before {
@@ -972,7 +972,7 @@ button {
   color: #FFFFFF;
   font-size: clamp(35px, 7vw, 64px);
   font-style: normal;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 110%; /* 77px */
   letter-spacing: 0.45px;
   text-transform: uppercase;
@@ -1138,7 +1138,7 @@ button {
   }
 }
 .hero-form__submit {
-  margin-top: clamp(24px, 3vw, 30px);
+  margin-top: clamp(10px, 2vw, 16px);
 }
 @media screen and (max-width: 575.98px) {
   .hero-form__submit {
@@ -1306,6 +1306,7 @@ button {
   display: flex;
   flex-wrap: wrap;
   gap: clamp(32px, 5vw, 50px);
+  margin-top: clamp(50px, 7vw, 75px);
 }
 .metrics > * {
   flex: 0 0 calc(33.3333333333% - clamp(32px, 5vw, 50px) * 2 / 3);
@@ -1410,6 +1411,11 @@ button {
   font-weight: 400;
   line-height: 140%; /* 25.2px */
 }
+@media screen and (max-width: 767.98px) {
+  .metric__text br {
+    display: none;
+  }
+}
 
 .methods {
   display: flex;
@@ -1468,7 +1474,8 @@ button {
   line-height: 100%; /* 16px */
 }
 .method-item__title {
-  padding-right: 30px;
+  padding-right: 45px;
+  min-height: 2lh;
   color: #3E484E;
   font-size: clamp(18px, 2vw, 20px);
   font-style: normal;
@@ -1866,6 +1873,9 @@ button {
   object-fit: cover;
   display: block;
 }
+.services-section .section-quote__text {
+  max-width: 382px;
+}
 
 .services {
   display: flex;
@@ -1922,7 +1932,7 @@ button {
 }
 .service__subtitle {
   margin-top: 15px;
-  height: 3lh;
+  min-height: 3lh;
   color: #CBD5E1;
   font-size: 18px;
   font-style: normal;
@@ -1943,6 +1953,12 @@ button {
   overflow: scroll;
   padding-right: 15px;
   position: relative;
+}
+@media screen and (max-width: 767.98px) {
+  .service__body {
+    height: unset;
+    max-height: 772px;
+  }
 }
 .service__body::-webkit-scrollbar {
   width: 4px;
@@ -1986,13 +2002,13 @@ button {
   width: 20px;
   height: 20px;
   display: block;
-  background: url(../../img/services/icon-color.svg) center/contain no-repeat;
+  background: url(../img/services/icon-color.svg) center/contain no-repeat;
 }
 .service__list li._gray::before {
-  background: url(../../img/services/icon-gray.svg) center/contain no-repeat;
+  background: url(../img/services/icon-gray.svg) center/contain no-repeat;
 }
 .service__list li._disabled::before {
-  background: url(../../img/services/icon-disabled.svg) center/contain no-repeat;
+  background: url(../img/services/icon-disabled.svg) center/contain no-repeat;
 }
 
 .track .swiper-slide {
@@ -2116,12 +2132,22 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+  overflow: hidden;
 }
-.reputation-section .brands__item img {
+.reputation-section .brands__item:hover .brands__hover {
+  opacity: 1;
+}
+.reputation-section .brands__logo {
   max-height: clamp(68px, 11vw, 110px);
   object-fit: contain;
   width: 100%;
   height: 100%;
+}
+.reputation-section .brands__hover {
+  opacity: 0;
+  position: absolute;
+  inset: 0;
 }
 
 .reputation-swiper {
@@ -2256,7 +2282,7 @@ button {
   content: "";
   width: 25px;
   height: 25px;
-  background: url(../../img/steps/icon.svg) center/contain no-repeat;
+  background: url(../img/steps/icon.svg) center/contain no-repeat;
   rotate: var(--rotation);
   margin-bottom: clamp(1px, 1vw, 6px);
 }
@@ -2499,6 +2525,7 @@ button {
   }
 }
 .insight-section__all {
+  font-family: "Inter";
   text-transform: none;
   margin-top: 30px;
   color: #485E76;
@@ -2516,7 +2543,7 @@ button {
   text-underline-position: from-font;
 }
 .insight-section__all_en {
-  text-transform: none !important;
+  font-family: "Inter";
 }
 @media screen and (max-width: 991.98px) {
   .insight-section__all {

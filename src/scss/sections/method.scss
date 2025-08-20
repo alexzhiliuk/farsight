@@ -39,7 +39,8 @@
 
     // .method-item__title
     &__title {
-        padding-right: 30px;
+        padding-right: 45px;
+        min-height: 2lh;
         color: #3E484E;
         font-size: clamp(18px, 2vw, 20px);
         font-style: normal;

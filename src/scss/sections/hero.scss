@@ -86,7 +86,7 @@
         color: $colorWhite;
         font-size: clamp(35px, 7vw, 64px);
         font-style: normal;
-        font-weight: 700;
+        font-weight: 500;
         line-height: 110%; /* 77px */
         letter-spacing: 0.45px;
         text-transform: uppercase;
@@ -271,7 +271,7 @@
 
     // .hero-form__submit
     &__submit {
-        margin-top: clamp(24px, 3vw, 30px);
+        margin-top: clamp(10px, 2vw, 16px);
 
         @media screen and (max-width: $breakpoint576) {
             width: 100%;

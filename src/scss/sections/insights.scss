@@ -10,6 +10,14 @@
                 flex: unset;
             }
         }
+
+
+        &__body {
+            @media screen and (max-width: $breakpoint992) {
+                display: flex;
+                flex-direction: column-reverse;
+            }
+        }
     }
 
     // .insight-section__all
@@ -24,6 +32,10 @@
         text-transform: none;
 
         margin-top: 30px;
+        @media screen and (max-width: $breakpoint992) {
+            margin-top: 0;
+            margin-bottom: 24px;
+        }
 
         color: #485E76;
         text-align: center;
@@ -39,9 +51,6 @@
         text-underline-offset: auto;
         text-underline-position: from-font;
 
-        @media screen and (max-width: $breakpoint992) {
-            margin-top: 24px;
-        }
     }
 }
 

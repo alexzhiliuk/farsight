@@ -214,6 +214,7 @@
                 }
             }
             &._disabled {
+                color: rgba($color: #FFF, $alpha: .28);
                 &::before {
                     background: url(../img/services/icon-disabled.svg) center / contain no-repeat;
                 }

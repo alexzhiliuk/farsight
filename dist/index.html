@@ -11,20 +11,20 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&display=swap&_v=20250820170032" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&display=swap&_v=20250821161305" rel="stylesheet">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="css/style.min.css?_v=20250820170032">
+    <link rel="stylesheet" href="css/style.min.css?_v=20250821161305">
 
     <link
       rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css?_v=20250820170032"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css?_v=20250821161305"
     />
 
     <!-- JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js?_v=20250820170032"></script>
-    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js?_v=20250820170032"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.2.0/jquery.magnific-popup.min.js?_v=20250820170032"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js?_v=20250821161305"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js?_v=20250821161305"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.2.0/jquery.magnific-popup.min.js?_v=20250821161305"></script>
 
     <title>Главная</title>
 </head>
@@ -98,6 +98,10 @@
             <div class="mobile-menu__close">
                 <img src="img/burger/close.svg" alt="">
             </div>
+        </div>
+        <div class="mobile-menu__lang">
+            <a href="index.html" class="_active">RU</a>
+            <a href="en-index.html">EN</a>
         </div>
         <ul class="mobile-menu__list">
         </ul>
@@ -280,9 +284,8 @@
 </section>
             <section class="section">
     <div class="section__container container">
-        <div class="section__header section__header_1-2">
-            <p class="section__point">метод работы</p>
-            <h2 class="section__title">Превращаем вашу недвижимость в стабильный доход — без вашего участия</h2>
+        <div class="section__header">
+            <h2 class="section__title">Как мы превращаем вашу <br> недвижимость в стабильный <br> доход — без вашего участия</h2>
         </div>
         <div class="section__body">
             <div class="methods">
@@ -312,9 +315,8 @@
 </section>
             <section class="section">
     <div class="section__container container">
-        <div class="section__header section__header_1-2">
-            <p class="section__point">кейсы</p>
-            <h2 class="section__title">Потенциал доход вашей недвижимости на примере наших проектов</h2>
+        <div class="section__header">
+            <h2 class="section__title">Потенциал доход вашей <br> недвижимости на примере <br>наших проектов</h2>
         </div>
         <div class="section__body">
             <div class="cases">
@@ -433,7 +435,7 @@
             <section class="section section_bg-primary services-section">
     <div class="section__container container">
         <div class="section__header">
-            <p class="section__point">услуги</p>
+            <div></div>
             <div>
                 <h2 class="section__title">Варианты управления</h2>
                 <p class="section__subtitle">
@@ -447,7 +449,7 @@
         <div class="section__body">
             <div class="services">
                 <blockquote class="section-quote">
-                    <p class="section-quote__text">Мы знаем, что время — самый ценный ресурс. Наша работа — высвободить его для вас</p>
+                    <p class="section-quote__text">С управлением Farsight вы можете быть уверены, что ваша недвижимость, сдаваемая в аренду на время отпуска, находится в надежных руках</p>
                     <div class="section-quote__author">
                         <div class="section-quote__avatar">
                             <img src="img/blockquote/avatar.png" alt="">
@@ -519,16 +521,6 @@
                             </ul>
                         </div>
                         <div class="service__item">
-                            <div class="service__list-title">Услуги для гостей</div>
-                            <ul class="service__list">
-                                <li class="_disabled">Полное ведение бронирований</li>
-                                <li class="_disabled">Сопровождение при заездах/выездах гостей</li>
-                                <li class="_disabled">Проверка и прием объекта после отъезда гостей</li>
-                                <li class="_disabled">Обеспечение гостей бельём, полотенцами и принадлежностями</li>
-                                <li class="_disabled">Дежурный обслуживающий персонал 24/7 и команда по благоустройству дома</li>
-                            </ul>
-                        </div>
-                        <div class="service__item">
                             <div class="service__list-title">Управление</div>
                             <ul class="service__list">
                                 <li class="_gray">Личный кабинет с онлайн-отчётностью и контролем объекта</li>
@@ -540,6 +532,16 @@
                                 <li class="_disabled">Подбор, обучение и управление персоналом</li>
                                 <li class="_disabled">Контрольный список инвентаризации имущества</li>
                                 <li class="_disabled">Управление обслуживанием бассейнов и садов</li>
+                            </ul>
+                        </div>
+                        <div class="service__item">
+                            <div class="service__list-title">Услуги для гостей</div>
+                            <ul class="service__list">
+                                <li class="_disabled">Полное ведение бронирований</li>
+                                <li class="_disabled">Сопровождение при заездах/выездах гостей</li>
+                                <li class="_disabled">Проверка и прием объекта после отъезда гостей</li>
+                                <li class="_disabled">Обеспечение гостей бельём, полотенцами и принадлежностями</li>
+                                <li class="_disabled">Дежурный обслуживающий персонал 24/7 и команда по благоустройству дома</li>
                             </ul>
                         </div>
                     </div>
@@ -759,9 +761,8 @@ $(document).ready(function() {
             <section class="section faq-section">
     <div class="section__container container">
         <div class="section__header">
-            <p class="section__point ">вопросы и ответы</p>
+            <h2 class="section__title">Часто задаваемые вопросы</h2>
             <div>
-                <h2 class="section__title">Часто задаваемые вопросы</h2>
                 <div class="faq">
                     <div class="faq-item">
                         <div class="faq-item__header">
@@ -811,8 +812,7 @@ $(document).ready(function() {
             <section class="section insight-section">
     <div class="section__container container">
         <div class="section__header">
-            <p class="section__point">инсайты</p>
-            <h2 class="section__title">Инсайты, которыми стоит поделиться</h2>
+            <h2 class="section__title">Инсайты, которыми <br> стоит поделиться</h2>
         </div>
         <div class="section__body">
             
@@ -980,6 +980,6 @@ $(document).ready(function() {
     </div>
 </footer>
 
-        <script src="js/app.min.js?_v=20250820170032"></script>
+        <script src="js/app.min.js?_v=20250821161305"></script>
     </body>
 </html>

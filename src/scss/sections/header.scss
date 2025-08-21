@@ -220,12 +220,14 @@
     &__header {
         display: flex;
         align-items: center;
-        justify-content: space-between
+        justify-content: space-between;
+        margin-bottom: 30px;
     }
 
     &__container {
         display: flex;  
         flex-direction: column;
+        height: 100%;
     }
 
     // .mobile-menu__logo
@@ -240,6 +242,51 @@
         img {
             width: 100%;
             height: auto;
+        }
+    }
+
+    &__lang {
+        margin-top: auto;
+        border-bottom: 1px solid #5B6579;
+        padding-bottom: 10px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        a {
+            color: #8A9AA1;
+            display: flex;
+            padding: 12px;
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 1.1;
+            padding-right: 16px;
+            position: relative;
+
+            &::after {
+                content: '';
+                height: 1lh;
+                width: 2px;
+                background: $colorWhite;
+                display: block;
+                
+                position: absolute;
+                top: 50%;
+                translate: 0 -50%;
+                right: 0;
+
+            }
+            &:last-child {
+                padding-right: 12px;
+                &::after {
+                    display: none;
+                }
+            }
+
+            &._active {
+                color: $colorWhite;
+            }
         }
     }
 
@@ -261,6 +308,7 @@
 
     // .mobile-menu__btn
     &__btn {
+        flex-shrink: 0;
         margin-top: 40px;
 
         border-radius: 5px;
@@ -284,6 +332,7 @@
     // .mobile-menu__socials
     &__socials {
         margin-top: 48px;
+        margin-bottom: auto;
 
         display: flex;
         align-items: center;

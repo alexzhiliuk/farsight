@@ -141,6 +141,13 @@
         // border-bottom: 1px solid #4B586E;
         flex-grow: 1;
     }
+    @media screen and (max-width: $breakpoint768) {
+        &:last-child {
+            .metric__body {
+                padding-bottom: 0;
+            }
+        }
+    }
 
     &__row {
         display: flex;

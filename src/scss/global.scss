@@ -140,6 +140,12 @@ $sectionPadding: clamp(56px, 10vw, 95px);
             font-family: $fontTitleEn;
             @include clamp(font-size, 30, 44);
         }
+
+        @media screen and (max-width: $breakpoint576) {
+            br {
+                display: none;
+            }
+        }
     }
 
     &__subtitle {

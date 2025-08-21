@@ -459,6 +459,11 @@ button {
   font-family: "Bebas Neue", sans-serif;
   font-size: clamp(30px, 4.4vw, 44px);
 }
+@media screen and (max-width: 575.98px) {
+  .section__title br {
+    display: none;
+  }
+}
 .section__subtitle {
   margin-top: 15px;
   color: #132F3B;
@@ -844,10 +849,12 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 30px;
 }
 .mobile-menu__container {
   display: flex;
   flex-direction: column;
+  height: 100%;
 }
 .mobile-menu__close {
   width: 25px;
@@ -855,6 +862,45 @@ button {
 .mobile-menu__close img {
   width: 100%;
   height: auto;
+}
+.mobile-menu__lang {
+  margin-top: auto;
+  border-bottom: 1px solid #5B6579;
+  padding-bottom: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mobile-menu__lang a {
+  color: #8A9AA1;
+  display: flex;
+  padding: 12px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.1;
+  padding-right: 16px;
+  position: relative;
+}
+.mobile-menu__lang a::after {
+  content: "";
+  height: 1lh;
+  width: 2px;
+  background: #FFFFFF;
+  display: block;
+  position: absolute;
+  top: 50%;
+  translate: 0 -50%;
+  right: 0;
+}
+.mobile-menu__lang a:last-child {
+  padding-right: 12px;
+}
+.mobile-menu__lang a:last-child::after {
+  display: none;
+}
+.mobile-menu__lang a._active {
+  color: #FFFFFF;
 }
 .mobile-menu__list {
   margin-top: 60px;
@@ -870,6 +916,7 @@ button {
   line-height: 110%;
 }
 .mobile-menu__btn {
+  flex-shrink: 0;
   margin-top: 40px;
   border-radius: 5px;
   border: 1px solid #FFF;
@@ -888,6 +935,7 @@ button {
 }
 .mobile-menu__socials {
   margin-top: 48px;
+  margin-bottom: auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1093,7 +1141,7 @@ button {
 .hero-form__subtitle {
   margin-top: 15px;
   color: #132F3B;
-  font-size: clamp(9px, 1.6vw, 16px);
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 110%; /* 17.6px */
@@ -1138,7 +1186,7 @@ button {
   }
 }
 .hero-form__submit {
-  margin-top: clamp(10px, 2vw, 16px);
+  margin-top: 30px;
 }
 @media screen and (max-width: 575.98px) {
   .hero-form__submit {
@@ -1148,7 +1196,7 @@ button {
 .hero-form__confirm, .footer__confirm, .cta-form__confirm {
   margin-top: clamp(10px, 2vw, 16px);
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 6px;
   color: #6E6E6E;
   font-size: 14px;
@@ -1380,6 +1428,11 @@ button {
   flex-direction: column;
   justify-content: flex-start;
   flex-grow: 1;
+}
+@media screen and (max-width: 767.98px) {
+  .metric:last-child .metric__body {
+    padding-bottom: 0;
+  }
 }
 .metric__row {
   display: flex;
@@ -1640,6 +1693,12 @@ button {
   right: 30px;
   height: 1px;
   background: linear-gradient(90deg, rgba(134, 134, 134, 0.28) 0%, rgba(134, 134, 134, 0.15) 46.15%, rgba(255, 255, 255, 0.4) 99.99%);
+}
+@media screen and (max-width: 1023.98px) {
+  .case-slide__tr::after {
+    background: #DADADA;
+    right: 0;
+  }
 }
 .case-slide__tr:last-child::after {
   display: none;
@@ -2006,6 +2065,9 @@ button {
 }
 .service__list li._gray::before {
   background: url(../img/services/icon-gray.svg) center/contain no-repeat;
+}
+.service__list li._disabled {
+  color: rgba(255, 255, 255, 0.28);
 }
 .service__list li._disabled::before {
   background: url(../img/services/icon-disabled.svg) center/contain no-repeat;
@@ -2524,6 +2586,12 @@ button {
     flex: unset;
   }
 }
+@media screen and (max-width: 991.98px) {
+  .insight-section .section__body {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
 .insight-section__all {
   font-family: "Inter";
   text-transform: none;
@@ -2547,7 +2615,8 @@ button {
 }
 @media screen and (max-width: 991.98px) {
   .insight-section__all {
-    margin-top: 24px;
+    margin-top: 0;
+    margin-bottom: 24px;
   }
 }
 

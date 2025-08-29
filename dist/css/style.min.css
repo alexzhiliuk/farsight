@@ -2752,7 +2752,7 @@ button {
   }
 }
 .footer__logo {
-  width: clamp(120px, 20vw, 197px);
+  width: clamp(120px, 20vw, 127px);
 }
 .footer__logo img {
   width: 100%;

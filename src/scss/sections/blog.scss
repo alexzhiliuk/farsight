@@ -80,6 +80,12 @@
     border-radius: 12px;
     overflow: hidden;
 
+    &:hover {
+        .main-article__img {
+            scale: 1.05;
+        }
+    }
+
     * {
         z-index: 1;
         position: relative;
@@ -94,6 +100,7 @@
         position: absolute;
         inset: 0;
         z-index: 0;
+        transition: all 600ms ease;
 
         img {
             width: 100%;

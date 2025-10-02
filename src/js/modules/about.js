@@ -22,10 +22,10 @@ const teamSwiper = new Swiper('#teamSwiper', {
     slidesPerView: 1,
     spaceBetween: 20,
 
-    autoplay: {
-        delay: 2000,
-        disableOnInteraction: false
-    },
+    // autoplay: {
+    //     delay: 2000,
+    //     disableOnInteraction: false
+    // },
 
     pagination: {
         el: "#teamSwiperPagination",

@@ -3987,6 +3987,7 @@ button {
   height: 222px;
   border-radius: 12px;
   overflow: hidden;
+  display: block;
 }
 @media screen and (max-width: 575.98px) {
   .team__video {
@@ -3995,6 +3996,7 @@ button {
   }
 }
 .team__video iframe {
+  pointer-events: none;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -4058,6 +4060,9 @@ button {
   border-radius: 12px;
   overflow: hidden;
 }
+.main-article:hover .main-article__img {
+  scale: 1.05;
+}
 .main-article * {
   z-index: 1;
   position: relative;
@@ -4070,6 +4075,7 @@ button {
   position: absolute;
   inset: 0;
   z-index: 0;
+  transition: all 600ms ease;
 }
 .main-article__img img {
   width: 100%;

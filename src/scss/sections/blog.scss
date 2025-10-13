@@ -495,30 +495,12 @@
 
         ul {
             list-style-type: disc;
-
-            li {
-                display: flex;
-
-                &::before {
-                    content: '•';
-                    padding: 0 4px;
-                    color: inherit;
-                }
-            }
+            padding: 1em;
         }
         ol {
             list-style-type: decimal;
             counter-reset: ol-counter;
-
-            li {
-                display: flex;
-                counter-increment: ol-counter;
-                &::before {
-                    content: counter(ol-counter) ".";
-                    padding: 0 4px;
-                    color: inherit;
-                }
-            }
+            padding-left: 1em;
         }
         h2, h3, h4, h5, h6 {
             font-size: clamp(28px, 4vw, 36px);

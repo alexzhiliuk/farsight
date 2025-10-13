@@ -221,30 +221,12 @@ $sectionPadding: clamp(56px, 10vw, 95px);
     }
     ul {
         list-style-type: disc;
-
-        li {
-            display: flex;
-
-            &::before {
-                content: '•';
-                padding: 0 4px;
-                color: inherit;
-            }
-        }
+        padding-left: 1em;
     }
     ol {
         list-style-type: decimal;
+        padding-left: 1em;
         counter-reset: ol-counter;
-
-        li {
-            display: flex;
-            counter-increment: ol-counter;
-            &::before {
-                content: counter(ol-counter) ".";
-                padding: 0 4px;
-                color: inherit;
-            }
-        }
     }
     h2, h3, h4, h5, h6 {
         font-size: clamp(26px, 2vw, 32px);

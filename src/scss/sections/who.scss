@@ -60,15 +60,8 @@
         }
 
         ul {
-            li {
-                display: flex;
-
-                &::before {
-                    content: '•';
-                    padding: 0 4px;
-                    color: inherit;
-                }
-            }
+            list-style-type: disc;
+            padding-left: 1em;
         }
     }
 

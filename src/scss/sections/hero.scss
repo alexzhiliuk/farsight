@@ -105,7 +105,7 @@
 
     // .hero__items
     &__items {
-        @include clamp(margin-top, 16, 30);
+        margin-top: 10px;
         color: $colorWhite;
         @include clamp(font-size, 18, 30);
         font-style: normal;

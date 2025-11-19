@@ -607,8 +607,9 @@ button {
   align-items: center;
   gap: 8px;
   height: 52px;
-  width: min(350px, 100%);
   padding: 0 clamp(16px, 2vw, 24px);
+  width: fit-content;
+  max-width: 100%;
   border-radius: 12px;
   background: #132F3B;
   color: #FFFFFF;
@@ -1024,7 +1025,7 @@ button {
   max-width: 710px;
 }
 .hero__items {
-  margin-top: clamp(16px, 3vw, 30px);
+  margin-top: 10px;
   color: #FFFFFF;
   font-size: clamp(18px, 3vw, 30px);
   font-style: normal;
@@ -2028,6 +2029,9 @@ button {
   font-weight: 500;
   line-height: 140%; /* 30.8px */
 }
+.service__list-title._disabled {
+  color: rgba(255, 255, 255, 0.28);
+}
 .service__list {
   display: flex;
   flex-direction: column;
@@ -2640,7 +2644,12 @@ button {
   align-items: center;
   justify-content: space-between;
   gap: 8px;
-  flex-wrap: wrap-reverse;
+}
+@media screen and (max-width: 575.98px) {
+  .insight__header {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
 }
 .insight__tag {
   margin-top: 4px;
